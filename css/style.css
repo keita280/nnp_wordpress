@@ -1,9 +1,4 @@
 @charset "UTF-8";
-
-/*
-Theme Name: nnp
-*/
-
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap");
 @media (max-width: 980px) {
   .is-pc {
