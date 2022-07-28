@@ -5,21 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" 
     content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="一般社団法人　全国精神科栄養士協会 のホームページです。">
+    <meta name="description" content="<?php bloginfo('description');?>"/>
     <meta name="robots" content="noindex">
     <!-- 本番納品前にnoindex消すの忘れないこと！！！ -->
-    <title>一般社団法人　全国精神科栄養士協会 ｜ Nutrition Needs in Psychiatry</title>
+    <title><?php bloginfo('name');?></title>
 
     <!-- reset css -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/reset.css">
+    <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/reset.css"> -->
     <!-- favicon -->
     <link rel="icon" href="#">
     <!-- fontowsome -->
-    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <!-- <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet"> -->
     <!-- googlefont -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Damion&family=Noto+Serif+JP&family=Patua+One&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Damion&family=Noto+Serif+JP&family=Patua+One&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet">
@@ -32,7 +32,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
 
     <!-- original -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
+    <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css"> -->
     <?php wp_head(); ?>
   </head>
   
