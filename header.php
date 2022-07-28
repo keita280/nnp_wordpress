@@ -15,21 +15,21 @@
     <!-- favicon -->
     <link rel="icon" href="#">
     <!-- fontowsome -->
-    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="//use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <!-- googlefont -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Damion&family=Noto+Serif+JP&family=Patua+One&display=swap" rel="stylesheet"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Damion&family=Noto+Serif+JP&family=Patua+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="//fonts.googleapis.com">
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
+    <link href="//fonts.googleapis.com/css2?family=Varela&display=swap" rel="stylesheet">
 
 
 
 
     <!-- jquery & iScroll -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
 
     <!-- original -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
