@@ -40,46 +40,43 @@
         <div class="section-ttl-en">NEWS</div>
         <div class="section-ttl-ja">新着情報</div>
       </h2>
+      <?php
+      $args = array (
+          'posts_per_page'=> 3,
+          'post_type' => 'news',
+          'tax_query' => array (
+          array (
+            'taxonomy' => 'tax_news',
+            'field' => 'slug',
+            'terms' => array ( 'term-osirase', 'term-event ' )
+          )
+        )
+      );
+      ?>
+      <?php $the_query = new WP_Query( $args ); ?>
+     	<?php if ( $the_query->have_posts() ) : ?>
       <div class="news__topics">
+      <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+			<?php
+				$terms = get_the_terms( get_the_ID(), 'tax_news' );
+				$term_name = $terms[0]->name;
+			?>
         <article class="news__topic">
           <a href="#" class="news-item-link">
             <div class="news__topic__contents">
               <div class="news-meta">
                 <div class="sp-meta">
-                  <p class="news__topic__date"><time datetime="2019-02-01"></time>2022.1.1</p>
-                  <div class="news-topic-label">研修のお知らせ</div>
+                  <p class="news__topic__date"><time datetime=""></time><?php the_time(get_option('date_format')); // ex) 2019年7月14日 ?></p>
+                  <div class="news-topic-label"><?php the_category() ?></div>
                 </div>
-                <p class="news__topic__text">お知らせタイトルが入りますお知らせタイトルが入りますお知らせタイトルが入りますお知らせタイトルが入ります</p>
+                <p class="news__topic__text"><?php the_title(); // ex) 本日の◯◯イベントは雨天の為、明日に延期いたします ?></p>
               </div>
             </div>
           </a>
         </article>
-        <article class="news__topic">
-          <a href="#" class="news-item-link">
-            <div class="news__topic__contents">
-              <div class="news-meta">
-                <div class="sp-meta">
-                <p class="news__topic__date"><time datetime="2019-02-01"></time>2022.10.3</p>
-                <p class="news-topic-label">活動報告</p>
-                </div>
-                <p class="news__topic__text">お知らせタイトルが入りますお知らせタイトルが入ります</p>
-              </div>
-            </div>
-          </a>
-        </article>
-        <article class="news__topic">
-          <a href="#" class="news-item-link">
-            <div class="news__topic__contents">
-              <div class="news-meta">
-                <div class="sp-meta">
-                <p class="news__topic__date"><time datetime="2019-02-01"></time>2022.9.21 </p>
-                <p class="news-topic-label">その他</p>
-                </div>
-                <p class="news__topic__text">お知らせタイトルが入りますお知らせタイトルが入ります</p>
-              </div>
-            </div>
-          </a>
-        </article>
+        <?php endwhile; ?>
+        <?php endif; ?>
+	      <?php wp_reset_query(); ?>
       <a class="top-news_btn cmn-button" href="/news.html">新着情報一覧<span class="arrow-right icon"></span></a>
     </div>
   </section>
