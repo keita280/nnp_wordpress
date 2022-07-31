@@ -40,44 +40,35 @@
         <div class="section-ttl-en">NEWS</div>
         <div class="section-ttl-ja">新着情報</div>
       </h2>
-      <?php
-      $args = array (
-          'posts_per_page'=> 3,
-          'post_type' => 'news',
-          'tax_query' => array (
-          array (
-            'taxonomy' => 'tax_news',
-            'field' => 'slug',
-            'terms' => array ( 'term-osirase', 'term-event ' )
-          )
-        )
-      );
-      ?>
-      <?php $the_query = new WP_Query( $args ); ?>
-     	<?php if ( $the_query->have_posts() ) : ?>
+            <!-- 記事のループ処理開始 -->
       <div class="news__topics">
-      <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-			<?php
-				$terms = get_the_terms( get_the_ID(), 'tax_news' );
-				$term_name = $terms[0]->name;
-			?>
+        <?php
+          $args = [
+            'post_type' => 'post', // 投稿タイプのスラッグ(通常投稿は'post')
+            'posts_per_page' => 3, // 表示件数
+          ];
+          $the_query = new WP_Query( $args );
+          if ( $the_query->have_posts() ) :
+          while ( $the_query->have_posts() ) : $the_query->the_post();
+        ?>
         <article class="news__topic">
-          <a href="#" class="news-item-link">
+          <a href="<?php the_permalink(); ?>" class="news-item-link">
             <div class="news__topic__contents">
               <div class="news-meta">
                 <div class="sp-meta">
-                  <p class="news__topic__date"><time datetime=""></time><?php the_time(get_option('date_format')); // ex) 2019年7月14日 ?></p>
-                  <div class="news-topic-label"><?php the_category() ?></div>
+                  <p class="news__topic__date"><time datetime="<?php the_time(get_option('date_format')); ?>"></time><?php the_time(get_option('date_format')); ?></p>
+                  <div class="news-topic-label"><?php the_category(); ?></div>
                 </div>
                 <p class="news__topic__text"><?php the_title(); // ex) 本日の◯◯イベントは雨天の為、明日に延期いたします ?></p>
               </div>
             </div>
           </a>
         </article>
-        <?php endwhile; ?>
+        <?php endwhile; else: ?>
+        <p>まだ記事がありません</p>
         <?php endif; ?>
-	      <?php wp_reset_query(); ?>
-      <a class="top-news_btn cmn-button" href="/news.html">新着情報一覧<span class="arrow-right icon"></span></a>
+        <?php wp_reset_postdata(); ?>
+        <a class="top-news_btn cmn-button" href="/news.html">新着情報一覧<span class="arrow-right icon"></span></a>
     </div>
   </section>
 

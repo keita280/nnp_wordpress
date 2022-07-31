@@ -38,6 +38,7 @@
   
   
 <body class="">
+  <?php wp_body_open(); ?>
   <header class="accordion" id="header"> 
     <div class="header_inner">
       <div class="header_top">
