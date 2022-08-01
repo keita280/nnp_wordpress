@@ -1051,6 +1051,7 @@ animation :infinity-scroll-left 300s infinite linear both;
   @include mq('md'){
     padding: 6px 20px;
   }
+  display: inline-block;
   font-size: 16px;
   margin: 8px 24px;
   color: #fff;

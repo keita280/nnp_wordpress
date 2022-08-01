@@ -34,3 +34,17 @@ function my_script_init() {
 }
 add_action('wp_enqueue_scripts', 'my_script_init');
 
+
+/**
+ * メニューの登録
+ */
+function my_menu_init() {
+  register_nav_menus(
+    array(
+      'global' => 'ヘッダーメニュー',
+      'drawer' => 'ドロワーメニュー',
+      'footer' => 'フッターメニュー',
+    )
+  );
+}
+add_action('init', 'my_menu_init');

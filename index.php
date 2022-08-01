@@ -56,8 +56,13 @@
             <div class="news__topic__contents">
               <div class="news-meta">
                 <div class="sp-meta">
-                  <p class="news__topic__date"><time datetime="<?php the_time(get_option('date_format')); ?>"></time><?php the_time(get_option('date_format')); ?></p>
-                  <div class="news-topic-label"><?php the_category(); ?></div>
+                  <p class="news__topic__date"><time datetime="2019-02-01"></time><?php the_time(get_option('date_format')); ?></p>
+                    <div class="news-topic-label">
+                      <?php
+                      $category = get_the_category();
+                      echo $category[0]->cat_name;
+                      ?>
+                    </div>
                 </div>
                 <p class="news__topic__text"><?php the_title(); // ex) 本日の◯◯イベントは雨天の為、明日に延期いたします ?></p>
               </div>
