@@ -4,7 +4,7 @@ Template Name: page-scheduleページ
 */
 get_header();
 ?>
-<?php if(have_posts()): while(have_posts()): the_post(); ?>
+
 
 <!-- ページタイトル -->
 <div class="page-title">
@@ -35,59 +35,94 @@ get_header();
       </h2>
       <p class="sp-words">横スクロールでご覧いただけます →</p>
       <div class="table-scroll">
-        <table class="bl_schedule_table schedule-table">
-          <thead>
-            <tr>
-              <th class="bl_schedule_th schedule-thead">日程</th>
-              <th class="bl_schedule_th schedule-thead">内容</th>
-              <th class="bl_schedule_th schedule-thead">開催場所</th>
-              <th class="bl_schedule_th schedule-thead">備考</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="bl_schedule_td">2023年2月26日</td>
-              <td class="bl_schedule_td">
-                <a href="#">第16回NNPセミナー</a>
-              </td>
-              <td class="bl_schedule_td">神奈川県栄養士会/web</td>
-              <td class="bl_schedule_td">受付締切：2023年1月31日</td>
-            </tr>
-            <tr>
-              <td class="bl_schedule_td">2023年2月</td>
-              <td class="bl_schedule_td">
-                第61回全国精神科栄養士Web研修会
-              </td>
-              <td class="bl_schedule_td">web開催</td>
-              <td class="bl_schedule_td">3日15日録画配信ともに終了</td>
-            </tr>
-            <tr>
-              <td class="bl_schedule_td">2023年2月26日</td>
-              <td class="bl_schedule_td">
-                <a href="#">第16回NNPセミナー</a>
-              </td>
-              <td class="bl_schedule_td">神奈川県栄養士会/web</td>
-              <td class="bl_schedule_td">受付締切：2023年1月31日</td>
-            </tr>
-            <tr>
-              <td class="bl_schedule_td">2023年2月26日</td>
-              <td class="bl_schedule_td">
-                <a href="#">第16回NNPセミナー</a>
-              </td>
-              <td class="bl_schedule_td">神奈川県栄養士会/web</td>
-              <td class="bl_schedule_td">受付締切：2023年1月31日</td>
-            </tr>
-            <tr>
-              <td class="bl_schedule_td">2023年2月26日</td>
-              <td class="bl_schedule_td">
-                <a href="#">第16回NNPセミナー</a>
-              </td>
-              <td class="bl_schedule_td">神奈川県栄養士会/web</td>
-              <td class="bl_schedule_td"></td>
-            </tr>
-          </tbody>
-        </table>
+        <!-- <table class="bl_schedule_table schedule-table">
+              <thead>
+                <tr>
+                  <th class="bl_schedule_th schedule-thead">日程</th>
+                  <th class="bl_schedule_th schedule-thead">内容</th>
+                  <th class="bl_schedule_th schedule-thead">開催場所</th>
+                  <th class="bl_schedule_th schedule-thead">備考</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="bl_schedule_td">2023年2月26日</td>
+                  <td class="bl_schedule_td">
+                    <a href="#">第16回NNPセミナー</a>
+                  </td>
+                  <td class="bl_schedule_td">神奈川県栄養士会/web</td>
+                  <td class="bl_schedule_td">受付締切：2023年1月31日</td>
+                </tr>
+                <tr>
+                  <td class="bl_schedule_td">2023年2月</td>
+                  <td class="bl_schedule_td">
+                    第61回全国精神科栄養士Web研修会
+                  </td>
+                  <td class="bl_schedule_td">web開催</td>
+                  <td class="bl_schedule_td">3日15日録画配信ともに終了</td>
+                </tr>
+                <tr>
+                  <td class="bl_schedule_td">2023年2月26日</td>
+                  <td class="bl_schedule_td">
+                    <a href="#">第16回NNPセミナー</a>
+                  </td>
+                  <td class="bl_schedule_td">神奈川県栄養士会/web</td>
+                  <td class="bl_schedule_td">受付締切：2023年1月31日</td>
+                </tr>
+                <tr>
+                  <td class="bl_schedule_td">2023年2月26日</td>
+                  <td class="bl_schedule_td">
+                    <a href="#">第16回NNPセミナー</a>
+                  </td>
+                  <td class="bl_schedule_td">神奈川県栄養士会/web</td>
+                  <td class="bl_schedule_td">受付締切：2023年1月31日</td>
+                </tr>
+                <tr>
+                  <td class="bl_schedule_td">2023年2月26日</td>
+                  <td class="bl_schedule_td">
+                    <a href="#">第16回NNPセミナー</a>
+                  </td>
+                  <td class="bl_schedule_td">神奈川県栄養士会/web</td>
+                  <td class="bl_schedule_td"></td>
+                </tr>
+
+              </tbody>
+            </table> -->
+        <!-- //テーブルのデータを取得 -->
+        <?php
+        $table = get_field('schedule');
+        if (!empty($table)) {
+          echo '<table class="bl_schedule_table schedule-table">';
+          if (!empty($table['caption'])) {
+            echo '<caption>' . $table['caption'] . '</caption>';
+          }
+          if (!empty($table['header'])) {
+            echo '<thead>';
+            echo '<tr>';
+            foreach ($table['header'] as $th) {
+              echo '<th class="bl_schedule_th schedule-thead">';
+              echo $th['c'];
+              echo '</th>';
+            }
+            echo '</tr>';
+            echo '</thead>';
+          }
+          echo '<tbody>';
+          foreach ($table['body'] as $tr) {
+            echo '<tr>';
+            foreach ($tr as $td) {
+              echo '<td class="bl_schedule_td">';
+              echo $td['c'];
+              echo '</td>';
+            }
+            echo '</tr>';
+          }
+          echo '</tbody>';
+          echo '</table>';
+        }
+        ?>
       </div>
+
     </div>
   </section>
 
@@ -104,7 +139,7 @@ get_header();
       </p>
       <p class="sp-words">横スクロールでご覧いただけます →</p>
       <div class="table-scroll">
-        <table class="bl_traning_table traning-table">
+        <!-- <table class="bl_traning_table traning-table">
           <thead>
             <tr>
               <th class="bl_traning_th traning-thead">日程</th>
@@ -176,7 +211,40 @@ get_header();
               </td>
             </tr>
           </tbody>
-        </table>
+        </table> -->
+        <!-- //テーブルのデータを取得 -->
+        <?php
+        $table = get_field('training');
+        if (!empty($table)) {
+          echo '<table class="bl_traning_table traning-table">';
+          if (!empty($table['caption'])) {
+            echo '<caption>' . $table['caption'] . '</caption>';
+          }
+          if (!empty($table['header'])) {
+            echo '<thead>';
+            echo '<tr>';
+            foreach ($table['header'] as $th) {
+              echo '<th class="bl_schedule_th schedule-thead">';
+              echo $th['c'];
+              echo '</th>';
+            }
+            echo '</tr>';
+            echo '</thead>';
+          }
+          echo '<tbody>';
+          foreach ($table['body'] as $tr) {
+            echo '<tr>';
+            foreach ($tr as $td) {
+              echo '<td class="bl_traning_td">';
+              echo $td['c'];
+              echo '</td>';
+            }
+            echo '</tr>';
+          }
+          echo '</tbody>';
+          echo '</table>';
+        }
+        ?>
       </div>
       <p class="traning-description_bottom">
         （更新１）は必須研修となります。更新までに受講ください。<br />
@@ -184,5 +252,5 @@ get_header();
       </p>
     </div>
   </section>
-	<?php endwhile; endif; ?>
+
   <?php get_footer(); ?>

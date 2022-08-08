@@ -54,20 +54,20 @@ add_action('init', 'my_menu_init');
  カスタム投稿タイプ
 ====================================*/
 
-add_action( 'init', 'custom_post' );
-function custom_post() {
-//カスタム投稿（投稿項目の名前）
-    register_post_type( 'schedule', array(
-        'label' => '研修会・イベント一覧',
-        'public' => true,
-        'query_var' => true,
-        'rewrite' => array( 'slug' => 'schedule' ),
-        'capability_type' => 'post',
-        'hierarchical' => false,
-        'menu_position' => 5,
-        'supports' => array( 'title','editor','thumbnail','custom-fields','excerpt','author','trackbacks','comments','revisions','page-attributes' ),
-        'has_archive' => true
-    ));
+// add_action( 'init', 'custom_post' );
+// function custom_post() {
+// //カスタム投稿（投稿項目の名前）
+//     register_post_type( 'schedule', array(
+//         'label' => '研修会・イベント一覧',
+//         'public' => true,
+//         'query_var' => true,
+//         'rewrite' => array( 'slug' => 'schedule' ),
+//         'capability_type' => 'post',
+//         'hierarchical' => false,
+//         'menu_position' => 5,
+//         'supports' => array( 'title','editor','thumbnail','custom-fields','excerpt','author','trackbacks','comments','revisions','page-attributes' ),
+//         'has_archive' => true
+//     ));
 //カスタム分類(タクソノミー)→今回の案件では使用しない。
     // register_taxonomy( 'schedule_cat', array(
     //     0 => 'schedule',),array(
@@ -77,4 +77,4 @@ function custom_post() {
     //     'query_var' => true,
     //     'rewrite' => array( 'slug' => 'schedule_cat' ),
     // ));
-}
+// }

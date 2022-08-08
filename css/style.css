@@ -4197,10 +4197,8 @@ table {
   color: #272727;
   letter-spacing: 0.04em;
   width: 170px;
-  height: 117px;
-  padding-top: 27px;
-  padding-bottom: 19px;
-  padding: 27px 19px 21px 23.3px;
+  vertical-align: middle;
+  padding: 23px 19px;
 }
 
 @media (max-width: 980px) {
