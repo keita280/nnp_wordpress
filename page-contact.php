@@ -42,7 +42,7 @@ get_header();
   <section class="change_contact_container">
     <div class="change_contact_inner inner">
       <h3 class="h3_ttl">お問い合わせフォーム</h3>
-      <form class="change_form" action="" method="post" name="">
+      <!-- <form class="change_form" action="" method="post" name="">
         <div class="change_form_container">
           <div class="change_form_body">
             <label>お名前<span>必須</span></label>
@@ -79,9 +79,7 @@ get_header();
 
         <div class="change_submit">
           <p class="change_submit_text">入力内容をご確認の上、<br class="is-sp">送信ボタンを押してください。</p>
-          <!-- <a class="change_submit_button">
-            <div class="chenge_button-white">送信する<span class="change-arrow-white"></span></div>
-          </a> -->
+
 
           <div class="button_wrap">
                 <input type="submit" value="送信する" /><span
@@ -89,7 +87,9 @@ get_header();
                 ></span>
               </div>
         </div>
-      </form>
+      </form> -->
+
+      <?php echo do_shortcode( '[contact-form-7 id="191" title="コンタクトフォーム 1"]' ); ?>
 
     </div>
   </section>
