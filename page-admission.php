@@ -51,7 +51,7 @@ get_header();
           <figure class="admission_flow"><img src="./img/admission_flow.webp" alt=""></figure>
           <h4 class="form_h4_ttl">会員情報</h4>
           <form  class="admission_form" action="" method="post" name="">
-              <div class="admission_form_container">
+              <!-- <div class="admission_form_container">
                 <div class="admission_form_body">
                     <label>お名前<span>必須</span></label>
                     <input type="text" name="name" placeholder="例：山田　太郎" value="">
@@ -112,14 +112,9 @@ get_header();
                   <label>個人情報の取り扱い<span class="required">必須</span></label>
                   <input class="checkbox-input" type="checkbox" name="" value=""><p class="checkbox-text"><a class="privacy-link" href="">プライバシーポリシー</a>に同意する</p>
                 </div>
-              </div>
+              </div> -->
 
-            <!-- inputを使用しないボタンパターン→擬似要素が使える -->
-            <div class="admission_submit">
-              <p class="admission_submit_text">入力内容をご確認の上、<br class="is-sp">送信ボタンを押してください。</p>
-              <a href="" class="admission_submit_button">
-                <div class="chenge_button-white">次へ<span class="admission-arrow-white"></span></div></a>
-              </div>
+              <?php echo do_shortcode( '[contact-form-7 id="206" title="お問い合わせ_copy"]' ); ?>
 
           </form>
 

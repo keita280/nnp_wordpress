@@ -35,6 +35,10 @@
   font-weight: 700;
   color: $font-color-main;
   text-align: center;
+  margin-bottom: 52px;
+  @include mq('sp'){
+
+  }
 }
 
 .change_form {
@@ -192,55 +196,96 @@ textarea {
 
 // チェックボックスここから
 
-.checkbox-text {
-  margin-left: 40px;
-  position:relative;
-  &::before{
-    content: "";
-    display: block;
-    position: absolute;
-    transform: translateX(-40px);
-    top: 0;
-    left: 0;
-    width: 23px;           
-    height: 23px;
-    border: 1px solid darkgray;
-    background: linear-gradient(180deg, #FFFFFF 0%, #EEEEEE 100%);
-    ;
-    border-radius: 6px;
-  }
-  &::after {
-    position: absolute;
-    opacity: 0;
-    top: 2px;
-    left: -32px;
-    display: block;
-    border-right: 2px solid #57B07B;
-    border-bottom: 2px solid #57B07B;
-    content: '';
-    width: 8px;
-    height: 14px;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
+// .checkbox-text {
+//   margin-left: 40px;
+//   position:relative;
+//   &::before{
+//     content: "";
+//     display: block;
+//     position: absolute;
+//     transform: translateX(-40px);
+//     top: 0;
+//     left: 0;
+//     width: 23px;           
+//     height: 23px;
+//     border: 1px solid darkgray;
+//     background: linear-gradient(180deg, #FFFFFF 0%, #EEEEEE 100%);
+//     ;
+//     border-radius: 6px;
+//   }
+//   &::after {
+//     position: absolute;
+//     opacity: 0;
+//     top: 2px;
+//     left: -32px;
+//     display: block;
+//     border-right: 2px solid #57B07B;
+//     border-bottom: 2px solid #57B07B;
+//     content: '';
+//     width: 8px;
+//     height: 14px;
+//     -webkit-transform: rotate(45deg);
+//     transform: rotate(45deg);
+//   }
   
-}
+// }
 
 
-.checkbox-input {
-  & :checked {
-    &::after {
-      opacity: 1;
-    }
-  }
-  
-}
+// .checkbox-input {
+//   & :checked {
+//     &::after {
+//       opacity: 1;
+//     }
+//   }
+// }
 
 .privacy-link{
   color: $link-color;
 }
 
 // チェックボックスここまで
+.checkbox-input input {
+  display: none;
+  opacity: 0;
+  }
+  .wpcf7-list-item-label {
+  padding-left: 35px;
+  position:relative;
+  font-size: 16px;
+  }
+  span.wpcf7-list-item {
+  margin: 0px;
+  }
+  .wpcf7-list-item-label::before{
+  content: “”;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 23px;
+  height: 23px;
+  border: 1px solid darkgray;
+  border-radius: 6px;
+  background: linear-gradient(180deg, #FFFFFF 0%, #EEEEEE 100%);
+  ;
+  }
+
+  .checkbox-input input:checked + .wpcf7-list-item-label::after{
+  content: “”;
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 7px;
+  width: 7px;
+  height: 14px;
+  transform: rotate(40deg);
+  border-bottom: 3px solid $font-color-main;
+  border-right: 3px solid $font-color-main;
+  }
+  
+
+
+
 
 
 .change_submit {
@@ -341,7 +386,7 @@ textarea {
 .change-arrow-white {
   position: relative;
   display: block;
-  transform: translateY(-150%);
+  transform: translateY(-225%);
   right: 23px;
   border-radius: 40px;
   width: 40px;

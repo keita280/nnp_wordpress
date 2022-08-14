@@ -2484,6 +2484,7 @@ table {
   font-weight: 700;
   color: #57B07B;
   text-align: center;
+  margin-bottom: 52px;
 }
 
 .change_form {
@@ -2656,48 +2657,51 @@ textarea {
   border-radius: 50%;
 }
 
-.checkbox-text {
-  margin-left: 40px;
-  position: relative;
+.privacy-link {
+  color: #237EE9;
 }
 
-.checkbox-text::before {
-  content: "";
+.checkbox-input input {
+  display: none;
+  opacity: 0;
+}
+
+.wpcf7-list-item-label {
+  padding-left: 35px;
+  position: relative;
+  font-size: 16px;
+}
+
+span.wpcf7-list-item {
+  margin: 0px;
+}
+
+.wpcf7-list-item-label::before {
+  content: “”;
   display: block;
   position: absolute;
-  -webkit-transform: translateX(-40px);
-          transform: translateX(-40px);
   top: 0;
   left: 0;
   width: 23px;
   height: 23px;
   border: 1px solid darkgray;
+  border-radius: 6px;
   background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#EEEEEE));
   background: linear-gradient(180deg, #FFFFFF 0%, #EEEEEE 100%);
-  border-radius: 6px;
 }
 
-.checkbox-text::after {
-  position: absolute;
-  opacity: 0;
-  top: 2px;
-  left: -32px;
+.checkbox-input input:checked + .wpcf7-list-item-label::after {
+  content: “”;
   display: block;
-  border-right: 2px solid #57B07B;
-  border-bottom: 2px solid #57B07B;
-  content: '';
-  width: 8px;
+  position: absolute;
+  top: 3px;
+  left: 7px;
+  width: 7px;
   height: 14px;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-.checkbox-input :checked::after {
-  opacity: 1;
-}
-
-.privacy-link {
-  color: #237EE9;
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+  border-bottom: 3px solid #57B07B;
+  border-right: 3px solid #57B07B;
 }
 
 .change_submit {
@@ -2719,8 +2723,8 @@ textarea {
 .change-arrow-white {
   position: relative;
   display: block;
-  -webkit-transform: translateY(-150%);
-          transform: translateY(-150%);
+  -webkit-transform: translateY(-225%);
+          transform: translateY(-225%);
   right: 23px;
   border-radius: 40px;
   width: 40px;
@@ -3052,6 +3056,10 @@ input[type="submit"]:hover {
   display: none;
 }
 
+span.wpcf7-list-item {
+  display: block;
+}
+
 ::-webkit-input-placeholder {
   color: darkgray;
 }
@@ -3072,43 +3080,6 @@ input[type="submit"]:hover {
   height: 1px;
   color: darkgray;
   margin: 66px 0;
-}
-
-.radio-input {
-  display: none;
-}
-
-.radio-input + label {
-  padding-left: 35px;
-  position: relative;
-  margin-right: 20px;
-  line-height: 40px;
-}
-
-.radio-input + label::before {
-  position: absolute;
-  content: '';
-  display: block;
-  border-radius: 50%;
-  border: 1px solid darkgray;
-  width: 24px;
-  height: 24px;
-  top: -2px;
-  background-color: #B1B1B1;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#EEEEEE));
-  background: linear-gradient(180deg, #FFFFFF 0%, #EEEEEE 100%);
-}
-
-.radio-input:checked + label::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 2px;
-  left: 4px;
-  width: 16px;
-  height: 16px;
-  background: #57B07B;
-  border-radius: 50%;
 }
 
 .checkbox-text {
