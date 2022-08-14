@@ -2661,7 +2661,7 @@ textarea {
   color: #237EE9;
 }
 
-.checkbox-input input {
+.checkbox-input {
   display: none;
   opacity: 0;
 }
@@ -2690,7 +2690,7 @@ span.wpcf7-list-item {
   background: linear-gradient(180deg, #FFFFFF 0%, #EEEEEE 100%);
 }
 
-.checkbox-input input:checked + .wpcf7-list-item-label::after {
+.checkbox-input:checked + .wpcf7-list-item-label::after {
   content: “”;
   display: block;
   position: absolute;
