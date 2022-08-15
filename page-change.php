@@ -41,7 +41,7 @@ get_header();
         <div class="change_contact_inner inner">
           <h3 class="h3_ttl">会員情報の変更・退会フォーム</h3>
           <form  class="change_form" action="" method="post" name="">
-            <div class="change_form_container">
+            <!-- <div class="change_form_container">
               <div class="change_form_body">
                   <label>お名前<span>必須</span></label>
                   <input type="text" name="name" placeholder="例：山田　太郎" value="">
@@ -78,20 +78,15 @@ get_header();
               </div>
             </div>
 
-            <!-- inputを使用しないボタンパターン→擬似要素が使える -->
+
             <div class="change_submit">
               <p class="change_submit_text">入力内容をご確認の上、<br class="is-sp">送信ボタンを押してください。</p>
               <a href="" class="change_submit_button">
                 <div class="chenge_button-white">詳しく見る<span class="change-arrow-white"></span></div></a>
-              </div>
-              
-              
-            <!-- inputを使用するボタンパターン→擬似要素が使えない -->
-            <!-- <div class="change_submit2">
-              <p class="change_submit_text2">入力内容をご確認の上、送信ボタンを押してください。</p>
-              <div class="change_submit_button2"><input class="change_submit_input" type="submit" value="詳しく見る"><span class="change-arrow-white2"></span></div>
-            </div> -->
-              <!-- /.contact__submit -->
+              </div> -->
+
+              <?php echo do_shortcode( '[contact-form-7 id="207" title="入会案内_copy"]' ); ?>
+
           </form>
 
         </div>

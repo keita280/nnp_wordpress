@@ -95,9 +95,7 @@
     padding: 15px 20px;
   }
 
-  > input[type="radio"] {
-    display: block;
-  }
+
   > input[type="checkbox"] {
     display: none;
   }
@@ -155,16 +153,19 @@ textarea {
 
 
 // ラジオボタン
-.radio-input{
-  display: none;
+input[type="radio"] {
+  opacity: 0;
+  position: absolute;
 }
-.radio-input + label{
-  padding-left: 35px;
-  position:relative;
-  margin-right: 20px;
-  line-height: 40px;
-}
-.radio-input + label::before{
+
+
+// input[type="radio"] + label{
+//   padding-left: 35px;
+//   position:relative;
+//   margin-right: 20px;
+//   line-height: 40px;
+// }
+.radio-input span label span::before{
   position: absolute;
   content: ''; //before, afterはこのプロパティが必須。
   display: block; //横幅・縦幅を指定するため、blockに。
@@ -179,7 +180,7 @@ textarea {
 
 
 
-.radio-input:checked + label::after{
+.wpcf7-list-item:checked + ::after{
   content: "";
   display: block;
   position: absolute;
@@ -190,6 +191,18 @@ textarea {
   background: $font-color-main;
   border-radius: 50%;
 }
+/* チェック後のボタン */
+input[type="radio"]:checked + .wpcf7-list-item-label::before {
+  background-color: $font-color-main; // チェック後の中心の色
+  box-shadow: inset 9px 9px 9px 9px $font-color-main; // 中心の色のスタイル
+}
+
+
+.radio-input > .first {
+  margin-bottom: 15px;
+}
+
+
 // ラジオボタンここまで
 
 

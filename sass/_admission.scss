@@ -142,9 +142,7 @@
     padding: 15px 20px;
   }
 
-  > input[type="radio"] {
-    display: block;
-  }
+
   > input[type="checkbox"] {
     display: none;
   }
@@ -164,53 +162,6 @@ span.wpcf7-list-item { display: block; }
   margin: 66px 0;
 }
 
-
-
-
-// ラジオボタン
-// .radio-input{
-//   display: none;
-// }
-
-// input[type="radio"]{
-//   position: absolute;
-//   opacity: 0;
-// }
-
-// .radio-input + label{
-//   padding-left: 35px;
-//   position:relative;
-//   margin-right: 20px;
-//   line-height: 40px;
-// }
-
-// .radio-input + label::before{
-//   position: absolute;
-//   content: ''; //before, afterはこのプロパティが必須。
-//   display: block; //横幅・縦幅を指定するため、blockに。
-//   border-radius: 50%; //これで形を円形に。
-//   border: 1px solid darkgray;
-//   width: 24px;
-//   height: 24px;
-//   top: -2px;
-//   background-color: #B1B1B1;
-//   background: linear-gradient(180deg, #FFFFFF 0%, #EEEEEE 100%);
-// }
-
-
-
-// .radio-input:checked + label::after{
-//   content: "";
-//   display: block;
-//   position: absolute;
-//   top: 2px;
-//   left: 4px;
-//   width: 16px;
-//   height: 16px;
-//   background: $font-color-main;
-//   border-radius: 50%;
-// }
-// ラジオボタンここまで
 
 
 
