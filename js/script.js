@@ -57,3 +57,17 @@ $(function(){
 });
 
 
+
+const tabs = $(".news-item")
+const contents = $(".Content")
+
+tabs.on("click", function () {
+  tabs.removeClass("Tab__isActive")
+  contents.removeClass("Content__isActive")
+
+  const clickedTab = $(this)
+  clickedTab.addClass("Tab__isActive")
+
+  const id = "#" + clickedTab.data("id")
+  $(id).addClass("Content__isActive")
+})

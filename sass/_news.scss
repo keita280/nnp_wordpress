@@ -1,21 +1,28 @@
 /* ------------------ */
 /* news */
 /* ------------------ */
+.news-inner {
+  max-width: 980px;
+  margin: 0 auto;
+  @include mq("sp") {
+    padding: 0 20px;
+  }
+}
 
 .news-list {
   display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-@media (max-width: 980px) {
-  // .news-list {
-  //   /* gap: 7px; */
-  // }
+  justify-content: space-between;
+  margin-top: 92px;
+  @include mq("sp") {
+    margin-top: 42px;
+  }
 }
 
 .news-item {
+  display: flex;
   text-align: center;
+  justify-content: center;
+  align-items: center;
   font-weight: 700;
   font-size: 20px;
   line-height: 30px;
@@ -24,71 +31,77 @@
   left: 230px;
   top: 470px;
   padding: 24px 21px 11.5px;
-  background: #f1f8ec;
   border-radius: 16px 16px 0px 0px;
-}
-
-.news-item_text {
+  background-color: #57b07b;
   color: #fff;
 }
 
 @media (max-width: 980px) {
   .news-item {
-    width: 107px;
+    width: 32%;
     height: 51px;
     left: 228px;
     top: 0px;
+    padding: 20.31px 14.83px 15.07px 20.69px;
+    font-size: 14px;
+  }
+  .news-item_is-sp {
+    width: 32%;
+    height: 51px;
+    left: 228px;
+    top: 0px;
+    padding: 20.31px 14.83px 15.07px 20.69px;
     font-size: 14px;
   }
 }
 
+.Tab__isActive {
+  background-color: #f1f8ec;
+  color: $font-color-black;
+}
+
 /* ------------------ */
-/* ※WordPress化時に削除 */
+/* ※デザイン確認の目的のため、後にjQueryで実装  */
 /* ------------------ */
-.news-item:not(:nth-of-type(1)) {
-  background: #57b07b;
+.news-item_text {
   color: #fff;
 }
 
-.traning-info-list {
-  width: 979px;
-  height: 2330px;
-  left: 230px;
-  top: 545px;
-  background: #f1f8ec;
-  border-radius: 0px 0px 16px 16px;
+.training_container {
+  width: 980px;
   padding: 58px 93px;
+  margin: 0 auto;
+  background: #f1f8ec;
+  @include mq("md") {
+    margin-bottom: 157px;
+  }
 }
 
 @media (max-width: 980px) {
-  .traning-info-list {
-    padding: 30px 27px 30px;
+  .training_container {
+    width: 100%;
+    padding: 30px 27px;
+  }
+}
+
+.training-info-list {
+  // left: 230px;
+  // top: 545px;
+  border-radius: 0px 0px 16px 16px;
+  padding-left: 93px;
+  padding-right: 93px;
+}
+
+@media (max-width: 980px) {
+  .training-info-list {
+    padding: 30px 27px 0px 27px;
     gap: 10px;
-    width: 362px;
-    height: 1100px;
-    margin-left: 27px;
+    // width: 362px;
+    // height: 1300px;
   }
 }
 
-.training-info-item {
-  border-bottom: 1px solid #57b07b;
-}
-
-@media (max-width: 980px) {
-  .traning-info-item {
-    margin-bottom: 28px;
-  }
-}
-
-.traning-info-item::before {
-  content: "";
-  position: absolute;
-  border-bottom: 10px solid #e9e9e9;
-  width: 794px;
-  height: 10px;
-}
-
-.traning-date {
+.training-date {
   font-size: 16px;
   line-height: 21px;
   text-align: left;
@@ -97,12 +110,17 @@
 }
 
 @media (max-width: 980px) {
-  .traning-date {
+  .training-date {
     font-size: 14px;
+    margin-bottom: 10px;
   }
 }
 
-.traning-date + a {
+.training-date:nth-of-type(1) {
+  padding-top: 42px;
+}
+
+.training-date + a {
   font-size: 20px;
   line-height: 30px;
   color: #237ee9;
@@ -110,19 +128,143 @@
 }
 
 @media (max-width: 980px) {
-  .traning-date + a {
+  .training-date + a {
     font-size: 18px;
+    margin-bottom: 10px;
   }
 }
 
-.traning-content {
+.training-content {
   font-size: 16px;
   line-height: 30px;
   margin-top: 14px;
+  padding-bottom: 34px;
+  border-bottom: 1px solid #57b07b;
 }
 
 @media (max-width: 980px) {
-  .traning-content {
+  .training-content {
+    font-size: 14px;
+    padding-bottom: 28px;
+  }
+}
+
+.pagination-list {
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+  gap: 14px;
+}
+
+@media (max-width: 980px) {
+  .pagination-list {
+    // width: 362px;
+    padding-top: 28px;
+  }
+}
+
+.pagination-item {
+  text-align: center;
+  margin: 0 2px;
+  padding-top: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  background: #fff;
+  border-radius: 50px;
+  border: solid 1px #57b07b;
+}
+
+@media (max-width: 980px) {
+  .pagination-item {
+    width: 34px;
+    height: 34px;
+    padding-top: 5px;
     font-size: 14px;
   }
+}
+
+.pagination-item:hover {
+  border: solid 1px #57b07b;
+  background: #57b07b;
+  cursor: pointer;
+  z-index: 5;
+  transition: ease 0.5s;
+}
+
+.pagination-item:hover .pagination-item_link + span {
+  color: #ffffff;
+  transition: ease 0.5s;
+}
+
+@media (max-width: 980px) {
+  .pagination-item:nth-of-type(3) {
+    padding-top: 6px;
+  }
+}
+
+.pagination-item:nth-of-type(5) {
+  padding-top: 12px;
+}
+
+@media (max-width: 980px) {
+  .pagination-item:nth-of-type(5) {
+    padding-top: 6px;
+  }
+}
+
+.pagination-item_link + span {
+  color: #57b07b;
+}
+
+@media (max-width: 980px) {
+  .pagination-list.is-pc {
+    display: none;
+  }
+}
+
+@media (min-width: 981px) {
+  .pagination-list.is-sp {
+    display: none;
+  }
+}
+
+.news-list_is-sp {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 74px;
+  // padding-top: 38px;
+  // gap: 20px;
+}
+
+@media (min-width: 981px) {
+  .news-list_is-sp {
+    display: none;
+  }
+}
+
+.news-item_is-sp {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  // width: 107px;
+  height: 51px;
+  left: 228px;
+  top: 0px;
+  padding: 20.31px 14.83px 15.07px 20.69px;
+  font-size: 14px;
+  border-radius: 0px 0px 16px 16px;
+  background: #f1f8ec;
+}
+
+/* ------------------ */
+/* ※WordPress化時に削除 */
+/* ------------------ */
+.news-item_is-sp:not(:nth-of-type(1)) {
+  background: #57b07b;
+  color: #fff;
 }
