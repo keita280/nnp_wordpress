@@ -59,7 +59,7 @@ $(function(){
 
 
 const tabs = $(".news-item")
-const contents = $(".Content")
+const contents = $(".training-info-item")
 
 tabs.on("click", function () {
   tabs.removeClass("Tab__isActive")
@@ -71,3 +71,14 @@ tabs.on("click", function () {
   const id = "#" + clickedTab.data("id")
   $(id).addClass("Content__isActive")
 })
+
+// $(function(){
+//   $('.news-item').on('click', function(){
+//     let index = $('.news-item').index(this);
+
+//     $('.news-item').removeClass('Tab__isActive');
+//     $(this).addClass('Tab__isActive');
+//     $('.training-info-item').removeClass('Content__isActive');
+//     $('.training-info-item').eq(index).addClass('Content__isActive');
+//   });
+// }); 

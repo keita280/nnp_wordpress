@@ -28,13 +28,13 @@ get_header();
   <!-- 新着情報 -->
   <section class="nner news-inner">
     <ul class="news-list">
-      <li class="news-item Tab__isActive">
+      <li data-id="Content1"  class="news-item Tab__isActive">
         研修案内
       </li>
-      <li class="news-item">
+      <li data-id="Content2"  class="news-item">
       活動報告
       </li>
-      <li class="news-item">
+      <li data-id="Content3"  class="news-item">
       その他
       </li>
     </ul>
@@ -45,12 +45,12 @@ get_header();
         <?php
         $newslist = get_posts(array(
           'category_name' => 'training', //特定のカテゴリースラッグを指定
-          'posts_per_page' => 10 //取得記事件数
+          'posts_per_page' => 10, //取得記事件数
         ));
         foreach ($newslist as $post) :
           setup_postdata($post);
         ?>
-          <li class="training-info-item">
+          <li id="Content1" class="training-info-item Content__isActive">
             <p class="training-date"> <?php the_time('Y.m.d'); ?></p>
             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
             <p class="training-content">
@@ -67,12 +67,12 @@ get_header();
         <?php
         $newslist = get_posts(array(
           'category_name' => 'activity', //特定のカテゴリースラッグを指定
-          'posts_per_page' => 10 //取得記事件数
+          'posts_per_page' => 10, //取得記事件数
         ));
         foreach ($newslist as $post) :
           setup_postdata($post);
         ?>
-          <li class="training-info-item Content__isActive">
+          <li id="Content2" class="training-info-item">
             <p class="training-date"> <?php the_time('Y.m.d'); ?></p>
             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
             <p class="training-content">
@@ -89,12 +89,12 @@ get_header();
         <?php
         $newslist = get_posts(array(
           'category_name' => 'etc', //特定のカテゴリースラッグを指定
-          'posts_per_page' => 10 //取得記事件数
+          'posts_per_page' => 10, // 表示件数
         ));
         foreach ($newslist as $post) :
           setup_postdata($post);
         ?>
-          <li class="training-info-item">
+          <li id="Content3" class="training-info-item">
             <p class="training-date"> <?php the_time('Y.m.d'); ?></p>
             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
             <p class="training-content">

@@ -3392,6 +3392,14 @@ span.wpcf7-list-item {
   }
 }
 
+.training-info-item {
+  display: none;
+}
+
+.Content__isActive {
+  display: block;
+}
+
 .training-date {
   font-size: 16px;
   line-height: 21px;
