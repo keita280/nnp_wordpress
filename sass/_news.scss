@@ -85,6 +85,7 @@
 }
 
 .training-info-list {
+  display: none;
   // left: 230px;
   // top: 545px;
   border-radius: 0px 0px 16px 16px;
@@ -94,6 +95,7 @@
 
 @media (max-width: 980px) {
   .training-info-list {
+    display: none;
     padding: 30px 27px 0px 27px;
     gap: 10px;
     // width: 362px;
@@ -101,9 +103,9 @@
   }
 }
 
-.training-info-item {
-  display: none;
-}
+// .training-info-item {
+//   display: none;
+// }
 
 .Content__isActive {
   display: block;

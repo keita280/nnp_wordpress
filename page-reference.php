@@ -19,11 +19,14 @@ get_header();
     <main>
       <!-- パンくずリスト -->
       <div class="breadcrumb inner">
-        <ol class="breadcrumbs">
-          <li><a href="../index.html">トップ</a></li>
-          <li><a href="./index.html"></a>資料室</li>
-        </ol>
-      </div>
+    <ol class="breadcrumbs">
+    <?php
+    if ( function_exists( 'bcn_display' ) ) {
+    bcn_display();
+    }
+    ?>
+    </ol>
+  </div>
 
       <!-- 資料室 -->
       <section class="reference_container">

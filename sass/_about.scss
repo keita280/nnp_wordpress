@@ -74,7 +74,17 @@ table {
 /* ------------------ */
 /* パンくずリスト */
 /* ------------------ */
-
+.breadcrumbs {
+  span + span  {
+    position: relative;
+    margin-left: 36px;
+    &::before {
+      content: "›";
+      position: absolute;
+      left: -18px;
+    }
+  }
+}
 
 
 .breadcrumb *,

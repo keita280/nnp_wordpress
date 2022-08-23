@@ -16,11 +16,14 @@ get_header();
     <main>
       <!-- パンくずリスト -->
       <div class="breadcrumb inner">
-        <ol class="breadcrumbs">
-          <li><a href="../index.html">トップ</a></li>
-          <li><a href="./index.html"></a>研修会・イベント一覧</li>
-        </ol>
-      </div>
+    <ol class="breadcrumbs">
+    <?php
+    if ( function_exists( 'bcn_display' ) ) {
+    bcn_display();
+    }
+    ?>
+    </ol>
+  </div>
 
       <!-- admission_container -->
       <section class="admission_container">

@@ -17,10 +17,14 @@ get_header();
 
 <main>
   <!-- パンくずリスト -->
+
   <div class="breadcrumb inner">
     <ol class="breadcrumbs">
-      <li><a href="../index.html">トップ</a></li>
-      <li><a href="./index.html"></a>新着情報</li>
+      <?php
+      if (function_exists('bcn_display')) {
+        bcn_display();
+      }
+      ?>
     </ol>
   </div>
 
@@ -28,20 +32,20 @@ get_header();
   <!-- 新着情報 -->
   <section class="nner news-inner">
     <ul class="news-list">
-      <li data-id="Content1"  class="news-item Tab__isActive">
+      <li data-id="Content1" class="news-item Tab__isActive">
         研修案内
       </li>
-      <li data-id="Content2"  class="news-item">
-      活動報告
+      <li data-id="Content2" class="news-item">
+        活動報告
       </li>
-      <li data-id="Content3"  class="news-item">
-      その他
+      <li data-id="Content3" class="news-item">
+        その他
       </li>
     </ul>
 
     <div class="training_container">
       <!-- 研修のお知らせ -->
-      <ul class="training-info-list">
+      <ul class="training-info-list Content__isActive">
         <?php
         $newslist = get_posts(array(
           'category_name' => 'training', //特定のカテゴリースラッグを指定
@@ -50,7 +54,8 @@ get_header();
         foreach ($newslist as $post) :
           setup_postdata($post);
         ?>
-          <li id="Content1" class="training-info-item Content__isActive">
+
+          <li class="training-info-item ">
             <p class="training-date"> <?php the_time('Y.m.d'); ?></p>
             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
             <p class="training-content">
@@ -61,9 +66,12 @@ get_header();
         endforeach;
         wp_reset_postdata();
         ?>
+      </ul>
 
 
-        <!-- 活動報告 -->
+      <!-- 活動報告 -->
+      <ul class="training-info-list">
+
         <?php
         $newslist = get_posts(array(
           'category_name' => 'activity', //特定のカテゴリースラッグを指定
@@ -72,20 +80,24 @@ get_header();
         foreach ($newslist as $post) :
           setup_postdata($post);
         ?>
-          <li id="Content2" class="training-info-item">
+
+          <li class="training-info-item">
             <p class="training-date"> <?php the_time('Y.m.d'); ?></p>
             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
             <p class="training-content">
               <?php echo get_the_excerpt(); ?>
             </p>
           </li>
+
         <?php
         endforeach;
         wp_reset_postdata();
         ?>
+      </ul>
 
 
-        <!-- その他-->
+      <!-- その他-->
+      <ul class="training-info-list">
         <?php
         $newslist = get_posts(array(
           'category_name' => 'etc', //特定のカテゴリースラッグを指定
@@ -94,7 +106,7 @@ get_header();
         foreach ($newslist as $post) :
           setup_postdata($post);
         ?>
-          <li id="Content3" class="training-info-item">
+          <li class="training-info-item">
             <p class="training-date"> <?php the_time('Y.m.d'); ?></p>
             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
             <p class="training-content">
@@ -105,13 +117,23 @@ get_header();
         endforeach;
         wp_reset_postdata();
         ?>
-
-
       </ul>
 
+
       <!-- ページネーション -->
+
       <ul class="pagination-list is-pc">
-        <li class="pagination-item">
+      <?php
+      $args = array(
+        'mid_size' => 1,
+        'prev_text' => '&lt;&lt;前へ',
+        'next_text' => '次へ&gt;&gt;',
+        'screen_reader_text' => ' ',
+      );
+      var_dump($args);
+      the_posts_pagination($args);
+      ?>
+        <!-- <li class="pagination-item">
           <a class="pagination-item_link" href="#"></a><span>1</span>
         </li>
         <li class="pagination-item">
@@ -131,7 +153,7 @@ get_header();
         </li>
         <li class="pagination-item">
           <a class="pagination-item_link" href="#"></a><span>→</span>
-        </li>
+        </li> -->
       </ul>
 
       <!-- @@@@@@@@@@@@@@@@@@@@@@@@@ -->

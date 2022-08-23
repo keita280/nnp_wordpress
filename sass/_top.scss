@@ -467,6 +467,13 @@ body {
 
 /* アコーディオンの中身 */
 
+.accordion {
+  @include mq('sp'){
+    position: fixed;
+    top: 0;
+  }
+}
+
 .accordion-title {
   color: #fff;
   cursor: pointer;
@@ -521,6 +528,8 @@ header {
 .header_inner {
   @include mq('sp'){
     padding: 15.54px 20px 14.35px 20px;
+    position: fixed;
+    top: 0;
   }
 }
 
@@ -726,10 +735,11 @@ h1 {
   display: none;
   padding: 0 38px;
   border-radius: 0 0 30px 30px;
+  @include mq('sp'){
+    margin-top: 57.13px;
+  }
 }
 
-.accordion-item_menu {
-}
 
 .accordion-item_list {
   padding: 20px 0;

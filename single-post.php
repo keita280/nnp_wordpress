@@ -11,10 +11,13 @@ get_header("white");
 <!-- ページタイトル -->
 <main class="main-fixed">
   <!-- パンくずリスト -->
-  <div class="breadcrumb inner news_breadcrumb">
+  <div class="breadcrumb inner">
     <ol class="breadcrumbs">
-      <li><a href="../index.html">トップ</a></li>
-      <li><a href="./index.html"></a>研修会・イベント一覧</li>
+    <?php
+    if ( function_exists( 'bcn_display' ) ) {
+    bcn_display();
+    }
+    ?>
     </ol>
   </div>
 
