@@ -125,12 +125,11 @@ get_header();
       <ul class="pagination-list is-pc">
       <?php
       $args = array(
-        'mid_size' => 1,
-        'prev_text' => '&lt;&lt;前へ',
-        'next_text' => '次へ&gt;&gt;',
-        'screen_reader_text' => ' ',
+          'mid_size' => 1,
+          'prev_text' => '&lt;&lt;前へ',
+          'next_text' => '次へ&gt;&gt;',
+          'screen_reader_text' => ' ',
       );
-      var_dump($args);
       the_posts_pagination($args);
       ?>
         <!-- <li class="pagination-item">
