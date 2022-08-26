@@ -31,21 +31,27 @@ get_header();
 
   <!-- 新着情報 -->
   <section class="nner news-inner">
-    <ul class="news-list">
-      <li data-id="Content1" class="news-item Tab__isActive">
+  <ul class="news-list">
+      <a href="<?php echo esc_url( home_url() ); ?>/category/training/">
+      <li data-id="Content1" class="news-item">
         研修案内
       </li>
+      </a>
+      <a href="<?php echo esc_url( home_url() ); ?>/category/activity/">
       <li data-id="Content2" class="news-item">
         活動報告
       </li>
-      <li data-id="Content3" class="news-item">
+      </a>
+      <a href="<?php echo esc_url( home_url() ); ?>/category/etc/">
+      <li data-id="Content3" class="news-item Tab__isActive">
         その他
       </li>
+      </a>
     </ul>
 
     <div class="training_container">
       <!-- 研修のお知らせ -->
-      <ul class="training-info-list Content__isActive">
+      <ul class="training-info-list">
         <?php
         $newslist = get_posts(array(
           'paged' => get_query_var('paged'), //これを加えました
@@ -67,46 +73,22 @@ get_header();
         endforeach;
         wp_reset_postdata();
         ?>
-        <ul class="pagination-list is-pc">
-
-          <?php
-          $args = array(
-            'mid_size' => 1,
-            'prev_text' => '&lt;&lt;前へ',
-            'next_text' => '次へ&gt;&gt;',
-            'screen_reader_text' => ' ',
-          );
-          // var_dump($args);
-          the_posts_pagination($args);
-          ?>
-          <!-- <li class="pagination-item">
-    <a class="pagination-item_link" href="#"></a><span>1</span>
-  </li>
-  <li class="pagination-item">
-    <a class="pagination-item_link" href="#"></a><span>2</span>
-  </li>
-  <li class="pagination-item">
-    <a class="pagination-item_link" href="#"></a><span>3</span>
-  </li>
-  <li class="pagination-item">
-    <a class="pagination-item_link" href="#"></a><span>4</span>
-  </li>
-  <li class="pagination-item">
-    <a class="pagination-item_link" href="#"></a><span>…</span>
-  </li>
-  <li class="pagination-item">
-    <a class="pagination-item_link" href="#"></a><span>50</span>
-  </li>
-  <li class="pagination-item">
-    <a class="pagination-item_link" href="#"></a><span>→</span>
-  </li> -->
-        </ul>
+      <ul class="pagination-list is-pc Pager__isActive">
+      <?php
+      $args = array(
+          'mid_size' => 1,
+          'prev_text' => '&lt;&lt;前へ',
+          'next_text' => '次へ&gt;&gt;',
+          'screen_reader_text' => ' ',
+      );
+      the_posts_pagination($args);
+      ?>
+      </ul>
       </ul>
 
 
       <!-- 活動報告 -->
       <ul class="training-info-list">
-
         <?php
         $newslist = get_posts(array(
           'paged' => get_query_var('paged'), //これを加えました
@@ -129,45 +111,22 @@ get_header();
         endforeach;
         wp_reset_postdata();
         ?>
-        <ul class="pagination-list is-pc">
-
-          <?php
-          $args = array(
-            'mid_size' => 1,
-            'prev_text' => '&lt;&lt;前へ',
-            'next_text' => '次へ&gt;&gt;',
-            'screen_reader_text' => ' ',
-          );
-          // var_dump($args);
-          the_posts_pagination($args);
-          ?>
-          <!-- <li class="pagination-item">
-    <a class="pagination-item_link" href="#"></a><span>1</span>
-  </li>
-  <li class="pagination-item">
-    <a class="pagination-item_link" href="#"></a><span>2</span>
-  </li>
-  <li class="pagination-item">
-    <a class="pagination-item_link" href="#"></a><span>3</span>
-  </li>
-  <li class="pagination-item">
-    <a class="pagination-item_link" href="#"></a><span>4</span>
-  </li>
-  <li class="pagination-item">
-    <a class="pagination-item_link" href="#"></a><span>…</span>
-  </li>
-  <li class="pagination-item">
-    <a class="pagination-item_link" href="#"></a><span>50</span>
-  </li>
-  <li class="pagination-item">
-    <a class="pagination-item_link" href="#"></a><span>→</span>
-  </li> -->
-        </ul>
+      <ul class="pagination-list is-pc">
+      <?php
+      $args = array(
+          'mid_size' => 1,
+          'prev_text' => '&lt;&lt;前へ',
+          'next_text' => '次へ&gt;&gt;',
+          'screen_reader_text' => ' ',
+      );
+      the_posts_pagination($args);
+      ?>
+      </ul>
       </ul>
 
 
       <!-- その他-->
-      <ul class="training-info-list">
+      <ul class="training-info-list Content__isActive">
         <?php
         $newslist = get_posts(array(
           'paged' => get_query_var('paged'), //これを加えたらページネーションうまくいった
@@ -188,40 +147,17 @@ get_header();
         endforeach;
         wp_reset_postdata();
         ?>
-        <ul class="pagination-list is-pc">
-
-          <?php
-          $args = array(
-            'mid_size' => 1,
-            'prev_text' => '&lt;&lt;前へ',
-            'next_text' => '次へ&gt;&gt;',
-            'screen_reader_text' => ' ',
-          );
-          // var_dump($args);
-          the_posts_pagination($args);
-          ?>
-          <!-- <li class="pagination-item">
-    <a class="pagination-item_link" href="#"></a><span>1</span>
-  </li>
-  <li class="pagination-item">
-    <a class="pagination-item_link" href="#"></a><span>2</span>
-  </li>
-  <li class="pagination-item">
-    <a class="pagination-item_link" href="#"></a><span>3</span>
-  </li>
-  <li class="pagination-item">
-    <a class="pagination-item_link" href="#"></a><span>4</span>
-  </li>
-  <li class="pagination-item">
-    <a class="pagination-item_link" href="#"></a><span>…</span>
-  </li>
-  <li class="pagination-item">
-    <a class="pagination-item_link" href="#"></a><span>50</span>
-  </li>
-  <li class="pagination-item">
-    <a class="pagination-item_link" href="#"></a><span>→</span>
-  </li> -->
-        </ul>
+     <ul class="pagination-list is-pc">
+      <?php
+      $args = array(
+          'mid_size' => 1,
+          'prev_text' => '&lt;&lt;前へ',
+          'next_text' => '次へ&gt;&gt;',
+          'screen_reader_text' => ' ',
+      );
+      the_posts_pagination($args);
+      ?>
+      </ul>
       </ul>
 
 
