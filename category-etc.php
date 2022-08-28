@@ -32,21 +32,21 @@ get_header();
   <!-- 新着情報 -->
   <section class="nner news-inner">
   <ul class="news-list">
-      <a href="<?php echo esc_url( home_url() ); ?>/category/training/">
-        <li data-id="Content1" class="news-item">
+      <a href="<?php echo esc_url(home_url()); ?>/category/training/"  class="news-item">
+        <li data-id="Content1">
           研修案内
         </li>
       </a>
-      <a href="<?php echo esc_url( home_url() ); ?>/category/activity/">
-      <li data-id="Content2" class="news-item">
-        活動報告
-      </li>
-    </a>
-    <a href="<?php echo esc_url( home_url() ); ?>/category/etc/">
-      <li data-id="Content3" class="news-item Tab__isActive">
-        その他
-      </li>
-    </a>
+      <a href="<?php echo esc_url(home_url()); ?>/category/activity/"  class="news-item">
+        <li data-id="Content2">
+          活動報告
+        </li>
+      </a>
+      <a href="<?php echo esc_url(home_url()); ?>/category/etc/"  class="news-item  Tab__isActive">
+        <li data-id="Content3">
+          その他
+        </li>
+      </a>
     </ul>
 
     <div class="training_container">
@@ -109,13 +109,21 @@ get_header();
     </div>
 
     <ul class="news-list_is-sp">
-      <li class="news-item_is-sp"><a href="#">研修案内</a></li>
-      <li class="news-item_is-sp">
-        <a class="news-item_text" href="#">活動報告</a>
-      </li>
-      <li class="news-item_is-sp">
-        <a class="news-item_text" href="#">その他</a>
-      </li>
+      <a href="<?php echo esc_url(home_url()); ?>/category/training/"  class="news-item_is-sp">
+        <li data-id="Content1">
+          研修案内
+        </li>
+      </a>
+      <a href="<?php echo esc_url(home_url()); ?>/category/activity/"  class="news-item_is-sp">
+        <li data-id="Content2">
+          活動報告
+        </li>
+      </a>
+      <a href="<?php echo esc_url(home_url()); ?>/category/etc/"  class="news-item_is-sp Tab__isActive">
+        <li data-id="Content3">
+          その他
+        </li>
+      </a>
     </ul>
   </section>
 

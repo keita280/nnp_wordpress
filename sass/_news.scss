@@ -59,13 +59,7 @@
   }
 }
 
-.Tab__isActive {
-  background-color: #f1f8ec;
-  color: $font-color-black;
-  >a {
-    color: $font-color-black;
-  }
-}
+
 
 /* ------------------ */
 /* ※デザイン確認の目的のため、後にjQueryで実装  */
@@ -171,6 +165,9 @@
   justify-content: center;
   padding-top: 70px;
   gap: 14px;
+  @include mq('sp'){
+    gap: 10px;
+  }
 }
 
 @media (max-width: 980px) {
@@ -275,14 +272,7 @@
   padding: 20.31px 14.83px 15.07px 20.69px;
   font-size: 14px;
   border-radius: 0px 0px 16px 16px;
-  background: #f1f8ec;
-}
-
-/* ------------------ */
-/* ※WordPress化時に削除 */
-/* ------------------ */
-.news-item_is-sp:not(:nth-of-type(1)) {
-  background: #57b07b;
+  background: $font-color-main;
   color: #fff;
 }
 
@@ -310,6 +300,14 @@
   border-radius: 50px;
   border: solid 1px #57b07b;
   color: #57b07b;
+  @include mq('sp'){
+    width: 34px;
+    height: 34px;
+    font-size: 14px;
+    background: #fff;
+    border-radius: 34px;
+    line-height: 14px;
+  }
   &:hover {
     border: solid 1px #57b07b;
     background: #57b07b;
@@ -330,23 +328,38 @@
   border-radius: 50px;
   border: solid 1px #57b07b;
   color: #fff;
+  @include mq('sp'){
+    width: 34px;
+    height: 34px;
+    font-size: 14px;
+    border-radius: 34px;
+    line-height: 14px;
+  }
 }
 
 .pagination .dots{
     box-shadow:none;
   line-height: 18px;
-  &:hover {
-    text-align: center;
-    margin: 0 2px;
-    padding-top: 10px;
-    width: 50px;
-    height: 50px;
-    font-size: 18px;
+  // &:hover {
+  //   text-align: center;
+  //   margin: 0 2px;
+  //   padding-top: 10px;
+  //   width: 50px;
+  //   height: 50px;
+  //   font-size: 18px;
+  //   background: #fff;
+  //   border-radius: 50px;
+  //   border: solid 1px #57b07b;
+  //   color: #57b07b;
+  //   cursor: default;
+  // }
+  @include mq('sp'){
+    width: 34px;
+    height: 34px;
+    font-size: 14px;
     background: #fff;
-    border-radius: 50px;
-    border: solid 1px #57b07b;
-    color: #57b07b;
-    cursor: default;
+    border-radius: 34px;
+    line-height: 7px;
   }
 }
 
@@ -359,6 +372,14 @@
   vertical-align: middle;
   text-decoration: none;
   font-size: 15px;
+  @include mq('sp'){
+    width: 34px;
+    height: 34px;
+    font-size: 14px;
+    background: #fff;
+    border-radius: 34px;
+    line-height: 14px;
+  }
   &::before,
   &::after{
     position: absolute;
@@ -374,6 +395,9 @@
     width: 15px;
     height: 1px;
     background: #7a0;
+    @include mq('sp'){
+      left: 9px;
+    }
   }
   &::after {
     left: 24px;
@@ -383,6 +407,9 @@
     border-right: 1px solid #7a0;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
+    @include mq('sp'){
+      left: 14px;
+    }
   }
     text-align: center;
     margin: 0 2px;
@@ -411,10 +438,17 @@
   position: relative;
   display: inline-block;
   padding: 0 0 0 16px;
-  color: #000;
   vertical-align: middle;
   text-decoration: none;
   font-size: 15px;
+  @include mq('sp'){
+    width: 34px;
+    height: 34px;
+    font-size: 14px;
+    background: #fff;
+    border-radius: 34px;
+    line-height: 14px;
+  }
   &::before,
   &::after{
     position: absolute;
@@ -430,6 +464,9 @@
     width: 15px;
     height: 1px;
     background: #7a0;
+    @include mq('sp'){
+      left: 10px;
+    }
   }
   &::after {
     left: 20px;
@@ -439,6 +476,9 @@
     border-right: 1px solid #7a0;
     -webkit-transform: rotate(-135deg);
     transform: rotate(-135deg);
+    @include mq('sp'){
+      left: 10px;
+    }
   }
     text-align: center;
     margin: 0 2px;
@@ -460,4 +500,12 @@
         border-right: 1px solid #fff;
       }
     }
+}
+
+.Tab__isActive {
+  background-color: #f1f8ec;
+  color: $font-color-black;
+  >a {
+    color: $font-color-black;
+  }
 }

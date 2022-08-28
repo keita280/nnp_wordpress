@@ -32,18 +32,18 @@ get_header();
   <!-- 新着情報 -->
   <section class="nner news-inner">
     <ul class="news-list">
-      <a href="<?php echo esc_url(home_url()); ?>/category/training/">
-        <li data-id="Content1" class="news-item Tab__isActive">
+      <a href="<?php echo esc_url(home_url()); ?>/category/training/"  class="news-item Tab__isActive">
+        <li data-id="Content1">
           研修案内
         </li>
       </a>
-      <a href="<?php echo esc_url(home_url()); ?>/category/activity/">
-        <li data-id="Content2" class="news-item">
+      <a href="<?php echo esc_url(home_url()); ?>/category/activity/"  class="news-item">
+        <li data-id="Content2">
           活動報告
         </li>
       </a>
-      <a href="<?php echo esc_url(home_url()); ?>/category/etc/">
-        <li data-id="Content3" class="news-item">
+      <a href="<?php echo esc_url(home_url()); ?>/category/etc/"  class="news-item">
+        <li data-id="Content3">
           その他
         </li>
       </a>
@@ -61,8 +61,7 @@ get_header();
         foreach ($newslist as $post) :
           setup_postdata($post);
         ?>
-
-          <li class="training-info-item ">
+          <li class="training-info-item">
             <p class="training-date"> <?php the_time('Y.m.d'); ?></p>
             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
             <p class="training-content">
@@ -74,7 +73,7 @@ get_header();
         wp_reset_postdata();
         ?>
         <!-- ページネーション -->
-        <ul class="pagination-list">
+        <ul class="pagination-list is-pc">
           <?php
           $args = array(
             'mid_size' => 3,
@@ -85,43 +84,40 @@ get_header();
           the_posts_pagination($args);
           ?>
         </ul>
+        <ul class="pagination-list is-sp">
+          <?php
+          $args = array(
+            'mid_size' => 0,
+            'prev_text' => '',
+            'next_text' => '',
+            'screen_reader_text' => ' ',
+          );
+          the_posts_pagination($args);
+          ?>
+        </ul>
       </ul>
-
-
-
-
-
-
-      <!-- @@@@@@@@@@@@@@@@@@@@@@@@@ -->
-      <!-- SP時 -->
-      <!-- @@@@@@@@@@@@@@@@@@@@@@@@@ -->
-      <!-- <ul class="pagination-list is-sp">
-        <li class="pagination-item">
-          <a class="pagination-item_link" href="#"></a><span>1</span>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-item_link" href="#"></a><span>2</span>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-item_link" href="#"></a><span>…</span>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-item_link" href="#"></a><span>50</span>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-item_link" href="#"></a><span>→</span>
-        </li>
-      </ul> -->
     </div>
 
+
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <!-- SP時 -->
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@ -->
     <ul class="news-list_is-sp">
-      <li class="news-item_is-sp"><a href="#">研修案内</a></li>
-      <li class="news-item_is-sp">
-        <a class="news-item_text" href="#">活動報告</a>
-      </li>
-      <li class="news-item_is-sp">
-        <a class="news-item_text" href="#">その他</a>
-      </li>
+      <a href="<?php echo esc_url(home_url()); ?>/category/training/"  class="news-item_is-sp Tab__isActive">
+        <li data-id="Content1">
+          研修案内
+        </li>
+      </a>
+      <a href="<?php echo esc_url(home_url()); ?>/category/activity/"  class="news-item_is-sp">
+        <li data-id="Content2">
+          活動報告
+        </li>
+      </a>
+      <a href="<?php echo esc_url(home_url()); ?>/category/etc/"  class="news-item_is-sp">
+        <li data-id="Content3">
+          その他
+        </li>
+      </a>
     </ul>
   </section>
 
