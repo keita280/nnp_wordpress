@@ -4688,6 +4688,10 @@ td:nth-of-type(5) {
   }
 }
 
+.reference_container {
+  display: block;
+}
+
 /* ------------------ */
 /* pass */
 /* ------------------ */

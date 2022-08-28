@@ -7,12 +7,6 @@ get_header();
 
 
 
-
-
-
-
-
-
     <!-- ページタイトル -->
     <div class="page-title">
       <figure class="section_title_blob-r">
@@ -38,6 +32,11 @@ get_header();
   </div>
 
       <!-- 資料室 -->
+
+      <?php if( !post_password_required( $post->ID ) ) : ?> 
+      <?php if( get_field('blog_content') ):/*カスタムフィールドで作った記事の入力エリア*/ ?> 
+      <?php the_field('blog_content'); ?> 
+      <?php endif; ?>
       <section class="pass_container">
         <div class="pass-content-description">
           <p>
@@ -64,43 +63,12 @@ get_header();
             ><?php echo esc_html( $fields['pdf_title']); ?></a>
           </li>
           <?php endforeach ?>
-
-          <!-- <li class="document-item">
-            <label class="document-title">○○媒体資料</label
-            ><a class="document-title-link"
-              href="nnp.pdf"
-              target="_blank"
-              style="text-decoration: underline"
-              >PDFタイトルを入れます</a
-            >
-          </li>
-          <li class="document-item">
-            <label class="document-title">○○媒体資料</label
-            ><a class="document-title-link"
-              href="nnp.pdf"
-              target="_blank"
-              style="text-decoration: underline"
-              >PDFタイトルを入れます</a
-            >
-          </li>
-          <li class="document-item">
-            <label class="document-title">○○媒体資料</label
-            ><a class="document-title-link"
-              href="nnp.pdf"
-              target="_blank"
-              style="text-decoration: underline"
-              >PDFタイトルを入れます</a
-            >
-          </li>
-          <li class="document-item">
-            <label class="document-title">○○媒体資料</label
-            ><a class="document-title-link"
-              href="nnp.pdf"
-              target="_blank"
-              style="text-decoration: underline"
-              >PDFタイトルを入れます</a
-            >
-          </li> -->
         </ul>
       </section>
+     <?php else: ?> 
+          <div class="custom_password_aria">
+               <?php echo get_the_password_form(); ?>
+
+          </div>
+     <?php endif; ?>
       <?php get_footer(); ?>
