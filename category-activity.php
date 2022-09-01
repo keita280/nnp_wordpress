@@ -97,23 +97,6 @@ get_header();
       <!-- @@@@@@@@@@@@@@@@@@@@@@@@@ -->
       <!-- SP時 -->
       <!-- @@@@@@@@@@@@@@@@@@@@@@@@@ -->
-      <!-- <ul class="pagination-list is-sp">
-        <li class="pagination-item">
-          <a class="pagination-item_link" href="#"></a><span>1</span>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-item_link" href="#"></a><span>2</span>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-item_link" href="#"></a><span>…</span>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-item_link" href="#"></a><span>50</span>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-item_link" href="#"></a><span>→</span>
-        </li>
-      </ul> -->
     </div>
 
     <ul class="news-list_is-sp">

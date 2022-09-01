@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: change-thanksページ
+Template Name: change_thanksページ
 */
 get_header("white");
 ?>

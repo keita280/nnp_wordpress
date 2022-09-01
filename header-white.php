@@ -37,8 +37,7 @@
   <!-- swiper -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css" />
 
-  <!-- original -->
-  <link rel="stylesheet" href="./css/style.css" />
+
   <?php wp_head(); ?>
 </head>
 
@@ -48,23 +47,23 @@
     <div class="header_inner">
       <div class="header_top">
         <h1 class="header_top_left is-pc opacity">
-          <a href="#">一般社団法人　全国精神科栄養士協会 ｜ Nutrition Needs in
+          <a href="<?php echo esc_url(home_url()); ?>">一般社団法人　全国精神科栄養士協会 ｜ Nutrition Needs in
             Psychiatry</a>
         </h1>
         <h1 class="header_top_left is-sp">
-          <a href="#">一般社団法人　全国精神科栄養士協会<br />Nutrition Needs in
+          <a href="<?php echo esc_url(home_url()); ?>">一般社団法人　全国精神科栄養士協会<br />Nutrition Needs in
             Psychiatry</a>
         </h1>
         <nav class="header_top_right is-pc">
           <ul class="header_top_right_menu">
             <li class="header_top_right_list">
-              <a href="#" class="header_top_right_link underline">ご挨拶</a>
+              <a href="<?php echo esc_url(home_url()); ?>/message" class="header_top_right_link underline">ご挨拶</a>
             </li>
             <li class="header_top_right_list">
-              <a href="#" class="header_top_right_link">会員情報の変更・退会</a>
+              <a href="<?php echo esc_url(home_url()); ?>/change" class="header_top_right_link">会員情報の変更・退会</a>
             </li>
             <li class="header_top_right_list">
-              <a href="#" class="header_top_right_link">お問い合わせ</a>
+              <a href="<?php echo esc_url(home_url()); ?>/contact" class="header_top_right_link">お問い合わせ</a>
             </li>
           </ul>
         </nav>
@@ -72,22 +71,22 @@
       <nav class="header_bottom is-pc">
         <ul class="header_bottom_menu">
           <li class="header_bottom_list">
-            <a class="header_bottom_link" href="#">私たちについて</a>
+            <a class="header_bottom_link" href="<?php echo esc_url(home_url()); ?>/about">私たちについて</a>
           </li>
           <li class="header_bottom_list">
-            <a class="header_bottom_link" href="#">新着情報</a>
+            <a class="header_bottom_link" href="<?php echo esc_url(home_url()); ?>/category-activity">新着情報</a>
           </li>
           <li class="header_bottom_list">
-            <a class="header_bottom_link" href="#">研修会・イベント一覧</a>
+            <a class="header_bottom_link" href="<?php echo esc_url(home_url()); ?>/schedule">研修会・イベント一覧</a>
           </li>
           <li class="header_bottom_list">
-            <a class="header_bottom_link" href="#">資料室</a>
+            <a class="header_bottom_link" href="<?php echo esc_url(home_url()); ?>/reference">資料室</a>
           </li>
           <li class="header_bottom_list">
-            <a class="header_bottom_link" href="#">私たちの強み</a>
+            <a class="header_bottom_link" href="<?php echo esc_url(home_url()); ?>/strong">私たちの強み</a>
           </li>
           <li class="join">
-            <a class="header_bottom_link btn-green" href="#">入会案内</a>
+            <a class="header_bottom_link btn-green" href="<?php echo esc_url(home_url()); ?>/admission">入会案内</a>
           </li>
         </ul>
       </nav>
@@ -100,39 +99,21 @@
       <span></span>
       <span></span>
     </div>
-
+    
     <nav class="accordion-item is-sp" id="accordion-item">
-      <ul class="accordion-item_menu">
-        <li class="accordion-item_list">
-          <a class="accordion-item_link" href="#">私たちについて<span class="arrow-right"></span></a>
-        </li>
-        <li class="accordion-item_list">
-          <a class="accordion-item_link" href="#">新着情報<span class="arrow-right"></span></a>
-        </li>
-        <li class="accordion-item_list">
-          <a class="accordion-item_link" href="#">研修会・イベント一覧<span class="arrow-right"></span></a>
-        </li>
-        <li class="accordion-item_list">
-          <a class="accordion-item_link" href="#">資料室<span class="arrow-right"></span></a>
-        </li>
+    <ul class="accordion-item_menu">
+      <li class="accordion-item_list"><a class="accordion-item_link" href="<?php echo esc_url(home_url()); ?>/about/">私たちについて<span class="arrow-right"></span></a></li>
+      <li class="accordion-item_list"><a class="accordion-item_link" href="<?php echo esc_url(home_url()); ?>/category/training/">新着情報<span class="arrow-right"></span></a></li>
+      <li class="accordion-item_list"><a class="accordion-item_link" href="<?php echo esc_url(home_url()); ?>/schedule/">研修会・イベント一覧<span class="arrow-right"></span></a></li>
+      <li class="accordion-item_list"><a class="accordion-item_link" href="<?php echo esc_url(home_url()); ?>/reference">資料室<span class="arrow-right"></span></a></li>
 
-        <li class="accordion-item_list">
-          <a class="accordion-item_link" href="#">私たちの強み<span class="arrow-right"></span></a>
-        </li>
-        <li class="accordion-item_list">
-          <a class="accordion-item_link" href="#">入会案内<span class="arrow-right"></span></a>
-        </li>
-      </ul>
-      <ul class="accordion-item_sub-menu">
-        <li class="accordion-item_sub-list">
-          <a href="" class="accordion-item_sub-link">ご挨拶</a>
-        </li>
-        <li class="accordion-item_sub-list">
-          <a href="" class="accordion-item_sub-link">会員情報の変更・退会</a>
-        </li>
-        <li class="accordion-item_sub-list">
-          <a href="" class="accordion-item_sub-link">お問い合わせ</a>
-        </li>
-      </ul>
-    </nav>
+      <li class="accordion-item_list"><a class="accordion-item_link" href="<?php echo esc_url(home_url()); ?>/strong">私たちの強み<span class="arrow-right"></span></a></li>
+      <li class="accordion-item_list"><a class="accordion-item_link" href="<?php echo esc_url(home_url()); ?>/admission">入会案内<span class="arrow-right"></span></a></li>
+    </ul>
+    <ul class="accordion-item_sub-menu">
+      <li class="accordion-item_sub-list"><a href="<?php echo esc_url(home_url()); ?>/message" class="accordion-item_sub-link">ご挨拶</a></li>
+      <li class="accordion-item_sub-list"><a href="<?php echo esc_url(home_url()); ?>/change" class="accordion-item_sub-link">会員情報の変更・退会</a></li>
+      <li class="accordion-item_sub-list"><a href="<?php echo esc_url(home_url()); ?>/contact" class="accordion-item_sub-link">お問い合わせ</a></li>
+    </ul>
+  </nav>
   </header>

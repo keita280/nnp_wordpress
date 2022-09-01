@@ -837,7 +837,7 @@ h1 {
   padding-bottom: 154.5px;
   @include mq('sp'){
     padding-top: 38px;
-    margin-top: -20px;
+    margin-top: 55px;
   }
 }
 
@@ -1750,24 +1750,30 @@ animation :infinity-scroll-left 300s infinite linear both;
 }
 
 .footer_bottom_left {
-  display: flex;
+  @include mq('md'){
+    display: flex;
+  }
   text-align-last: left;
   font-size: 14px;
   position: relative;
 
   @include mq('sp'){
     margin-bottom: 28px;
+    display: inline-block;
+    text-align: center;
   }
-  :not(:first-child) {
-    :before {
-      position: absolute;
-      top: 50%;
-      content: "";
-      width: 1px;
-      height: 10px;
-      display: block;
-      transform: translate(-50%, -50%);
-      background-color: $font-color-white;/*線の色*/
+  @include mq('md'){
+    :not(:first-child) {
+      :before {
+        position: absolute;
+        top: 50%;
+        content: "";
+        width: 1px;
+        height: 10px;
+        display: block;
+        transform: translate(-50%, -50%);
+        background-color: $font-color-white;/*線の色*/
+      }
     }
   }
 }
@@ -1795,11 +1801,16 @@ animation :infinity-scroll-left 300s infinite linear both;
 }
 
 .footer_bottom_left_link_left {
-  margin-right: 16px;
+  @include mq('md'){
+    margin-right: 16px;
+  }
 }
 
 .footer_bottom_left_link_right {
-  margin-left: 16px;
+  @include mq('md'){
+    margin-left: 16px;
+    margin-right: 16px;
+  }
 }
 
 .footer_bottom_right {

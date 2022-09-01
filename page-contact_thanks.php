@@ -21,7 +21,7 @@ get_header("white");
         お手数ですが再度お問い合わせをお願いいたします。
       </p>
       <div class="for-top">
-        <a class="cmn-button sp-for-top">トップへ<span class="arrow-right icon"></span></a>
+        <a class="cmn-button sp-for-top" href="<?php echo esc_url(home_url()); ?>">トップへ<span class="arrow-right icon"></span></a>
       </div>
     </div>
   </section>

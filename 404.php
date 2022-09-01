@@ -20,7 +20,7 @@ get_header("white");
         お探しのページは見つかりませんでした。
       </p>
       <div class="for-top">
-        <a class="cmn-button sp-for-top">トップへ<span class="arrow-right icon"></span></a>
+        <a class="cmn-button sp-for-top" href="<?php echo esc_url(home_url()); ?>">トップへ<span class="arrow-right icon"></span></a>
       </div>
     </div>
   </section>

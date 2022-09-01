@@ -50,36 +50,6 @@ function my_menu_init() {
 add_action('init', 'my_menu_init');
 
 
-/*====================================
- カスタム投稿タイプ
-====================================*/
-
-// add_action( 'init', 'custom_post' );
-// function custom_post() {
-// //カスタム投稿（投稿項目の名前）
-//     register_post_type( 'schedule', array(
-//         'label' => '研修会・イベント一覧',
-//         'public' => true,
-//         'query_var' => true,
-//         'rewrite' => array( 'slug' => 'schedule' ),
-//         'capability_type' => 'post',
-//         'hierarchical' => false,
-//         'menu_position' => 5,
-//         'supports' => array( 'title','editor','thumbnail','custom-fields','excerpt','author','trackbacks','comments','revisions','page-attributes' ),
-//         'has_archive' => true
-//     ));
-//カスタム分類(タクソノミー)→今回の案件では使用しない。
-    // register_taxonomy( 'schedule_cat', array(
-    //     0 => 'schedule',),array(
-    //     'hierarchical' => true,
-    //     'label' => 'カテゴリー',
-    //     'public' => true,
-    //     'query_var' => true,
-    //     'rewrite' => array( 'slug' => 'schedule_cat' ),
-    // ));
-// }
-
-
 
 // パスワード保護ページカスタマイズ
 function my_password_form() {
@@ -110,33 +80,35 @@ function my_password_form() {
 }
 add_filter('the_password_form', 'my_password_form');
 
-// <section class="reference_container">
-// <div class="inner">
-//   <form class="reference-content" action="../reference/pass/index.html">
-//     <p class="password-description">パスワードを入力してください</p>
-//     <input
-//       class="password-input"
-//       type="password"
-//       id="password"
-//       name="password"
-//       required
-//       minlength="8"
-//       size="30"
-//     />
-//     <button class="submit-button" type="submit">確定</button>
-//   </form>
-  // <div class="content-description">
-  //   <p>このコンテンツは会員限定です。</p>
-  //   <p>
-  //     入会時に記載いただいたメールアドレス宛にお送りしたメールに記載されているパスワードを入力してください。
-  //   </p>
-  //   <p>
-  //     パスワードは定期的に変更され、その度にメールをお送りしております。<br /><br />
-  //   </p>
-  //   <p>
-  //     パスワードがわからない場合は、<a href="">お問い合わせフォーム</a>
-  //     より事務局にご連絡ください。
-  //   </p>
-  // </div>
-// </div>
-// </section>
+
+
+// コンタクトフォームで送信成功後、送信完了メッセージに遷移する処理
+// add_action('wp_footer', 'redirect_to_thanks_page');
+// function redirect_to_thanks_page() {
+//   $homeUrl = home_url();
+//   echo <<< EOD
+//     <script>
+//       document.addEventListener( 'wpcf7mailsent', function( event ) {
+//         location = '{$homeUrl}/contact_thanks/';
+//       }, false );
+//     </script>
+//   EOD;
+// }
+
+// Contact Form7の送信ボタンをクリックした後の遷移先設定
+// add_action( 'wp_footer', 'add_origin_thanks_page' );
+//  function add_origin_thanks_page() {
+//  $contact = home_url('/contact_thanks/');
+//  $change = home_url('/change_thanks/');
+//    echo <<< EOC
+//      <script>
+//        var thanksPage = {
+//          191: '{$contact}',
+//          531: '{$change}',
+//        };
+//      document.addEventListener( 'wpcf7mailsent', function( event ) {
+//        location = thanksPage[event.detail.contactFormId];
+//      }, false );
+//      </script>
+//    EOC;
+//  }

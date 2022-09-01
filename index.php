@@ -15,17 +15,29 @@
         <ul class="d-demo__list d-demo__list--left">
           <li class="d-demo__item"><img src="<?php echo get_template_directory_uri(); ?>/img/main_visual.png" alt></li>
         </ul>
+        <ul class="d-demo__list d-demo__list--left">
+          <li class="d-demo__item"><img src="<?php echo get_template_directory_uri(); ?>/img/main_visual.png" alt></li>
+        </ul>
+        <ul class="d-demo__list d-demo__list--left">
+          <li class="d-demo__item"><img src="<?php echo get_template_directory_uri(); ?>/img/main_visual.png" alt></li>
+        </ul>
+        <ul class="d-demo__list d-demo__list--left">
+          <li class="d-demo__item"><img src="<?php echo get_template_directory_uri(); ?>/img/main_visual.png" alt></li>
+        </ul>
+        <ul class="d-demo__list d-demo__list--left">
+          <li class="d-demo__item"><img src="<?php echo get_template_directory_uri(); ?>/img/main_visual.png" alt></li>
+        </ul>
       </div>
     </div>
     <div class="top-about_container inner">
-      <div class="top-about inner" href="#">
+      <div class="top-about inner">
         <figure class="top-about_title">
           <img src="<?php echo get_template_directory_uri(); ?>/img/main_copy.png" alt="">
         </figure>
         <div class="top-about_text">
           一般社団法人全国精神科栄養士協会は、精神科患者様の栄養ニーズ<br class="is-pc">を考え、患者様のQOL向上のために活動しています。
         </div>
-        <a class="top-about_link_text cmn-button" href="/about.html">私たちについて<span class="arrow-right icon"></span></a>
+        <a class="top-about_link_text cmn-button" href="<?php echo esc_url(home_url()); ?>/about/">私たちについて<span class="arrow-right icon"></span></a>
       </div>
     </div>
   </section>
@@ -75,7 +87,7 @@
           <p>まだ記事がありません</p>
         <?php endif; ?>
         <?php wp_reset_postdata(); ?>
-        <a class="top-news_btn cmn-button" href="/news.html">新着情報一覧<span class="arrow-right icon"></span></a>
+        <a class="top-news_btn cmn-button" href="<?php echo esc_url(home_url()); ?>/category/training/">新着情報一覧<span class="arrow-right icon"></span></a>
       </div>
   </section>
 
@@ -95,7 +107,7 @@
         会員の皆様からは、繋がりができてよかった！スキルアップできた！入ってよかった！などのお声をいただいています。</p>
       <div class="top-joinus_frames">
         <a class="top-joinus_frame 
-        top-joinus_frame_left" href="/strong.html">
+        top-joinus_frame_left" href="<?php echo esc_url(home_url()); ?>/strong">
           <div class="top-joinus_bg_l">
             <img src="<?php echo get_template_directory_uri(); ?>/img/top_joinus_frm_l.png" alt="">
             <div class="box-text">
@@ -107,7 +119,7 @@
           </div>
         </a>
         <a class="top-joinus_frame 
-        top-joinus_frame_right" href="/admission.html">
+        top-joinus_frame_right" href="<?php echo esc_url(home_url()); ?>/admission">
           <div class="top-joinus_bg_r">
             <img src="<?php echo get_template_directory_uri(); ?>/img/top_joinus_frm_r.png" alt="">
             <div class="box-text">
@@ -178,7 +190,7 @@
 //top-entry
 //＠＠＠＠＠＠＠＠＠＠＠＠＠＠＠＠＠＠ -->
   <section class="top-entry">
-    <a href="/admission.html" class="top-entry_container inner">
+    <a href="<?php echo esc_url(home_url()); ?>/payment/admission" class="top-entry_container inner">
       <div class="bg-dark_green">
         <div class="top-entry_txt">全国に仲間を作り、<br class="is-sp">精神科領域の栄養管理に関する<br>疑問や悩みを解決しませんか？</div>
         <div class="cmn-button-white_area">

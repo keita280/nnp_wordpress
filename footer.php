@@ -18,17 +18,17 @@
       <!-- footer_contents_adress -->
       <div class="footer_contents_links">
         <ul class="footer_contents_link_top">
-          <li class="footer_contents_link_text"><a href="/about.html" >私たちについて</a></li>
-          <li class="footer_contents_link_text"><a href="/news.html" >新着情報</a></li>
-          <li class="footer_contents_link_text"><a href="/strong.html">私たちの強み</a></li>
-          <li class="footer_contents_link_text"><a href="/reference.html" >資料室</a></li>
+          <li class="footer_contents_link_text"><a href="<?php echo esc_url(home_url()); ?>/about/" >私たちについて</a></li>
+          <li class="footer_contents_link_text"><a href="<?php echo esc_url(home_url()); ?>/category/training/" >新着情報</a></li>
+          <li class="footer_contents_link_text"><a href="<?php echo esc_url(home_url()); ?>/strong">私たちの強み</a></li>
+          <li class="footer_contents_link_text"><a href="<?php echo esc_url(home_url()); ?>/reference" >資料室</a></li>
         </ul>
         <!-- footer_contents_link_top -->
         <ul class="footer_contents_link_bottom">
-          <li class="footer_contents_link_text"><a href="/message.html">ご挨拶</a></li>
-          <li class="footer_contents_link_text"><a href="/schedule.html" >研修会・イベント一覧</a></li>
-          <li class="footer_contents_link_text"><a href="/admission.html">入会案内</a></li>
-          <li class="footer_contents_link_text"><a href="/change.html" >会員情報の変更・退会</a></li>
+          <li class="footer_contents_link_text"><a href="<?php echo esc_url(home_url()); ?>/message">ご挨拶</a></li>
+          <li class="footer_contents_link_text"><a href="<?php echo esc_url(home_url()); ?>/schedule" >研修会・イベント一覧</a></li>
+          <li class="footer_contents_link_text"><a href="<?php echo esc_url(home_url()); ?>/admission">入会案内</a></li>
+          <li class="footer_contents_link_text"><a href="<?php echo esc_url(home_url()); ?>/change" >会員情報の変更・退会</a></li>
         </ul>
         <!-- footer_contents_link_bottom -->
       </div>
@@ -40,8 +40,9 @@
   <div class="footer_bottom bgc-deep-green">
     <div class="footer_container inner">
       <ul class="footer_bottom_left">
-        <li><a href="/contact.html" class="footer_bottom_left_link footer_bottom_left_link_left">お問い合わせ</a></li>
-        <li><a href="/privacy.html" class="footer_bottom_left_link footer_bottom_left_link_right">プライバシーポリシー</a></li>
+        <li><a href="<?php echo esc_url(home_url()); ?>/contact" class="footer_bottom_left_link footer_bottom_left_link_left">お問い合わせ</a></li>
+        <li><a href="<?php echo esc_url(home_url()); ?>/privacy" class="footer_bottom_left_link footer_bottom_left_link_right">プライバシーポリシー</a></li>
+        <li><a href="<?php echo esc_url(home_url()); ?>/privacy" class="footer_bottom_left_link footer_bottom_left_link_right">特定商取引法に基づく表記</a></li>
       </ul>
       <div class="footer_bottom_right">Copyright © 2022<br class="is-sp"> 全国精神科栄養士協会 All Rights Reserved.</div>
     </div>
@@ -51,23 +52,11 @@
 </section>
 
 
-<!-- //＠＠＠＠＠＠＠＠＠＠＠＠＠＠＠＠＠＠
-//スクロールトップ
-//＠＠＠＠＠＠＠＠＠＠＠＠＠＠＠＠＠＠ -->
-<!-- <figure class="scroll-top">
-  <a href="#"><img src="./img/icon_arrow-top.png" alt="#"></a>
-</figure> -->
 
 
 </main>
 
 
-
-
-
-<!-- jquery & iScroll -->
-<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
-<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script> -->
 
 <?php wp_footer(); ?>
 </body>
