@@ -102,8 +102,7 @@ get_header();
               <div class="sp02_yellow">
                 <div class="sp02_yellow_space is-pc"></div>
                 <div class="sp02_yellow_bg">
-                  <p>弁当箱に詰まっていたり、包装されていると安心するみたい。
-                    個包装のパン、牛乳、栄養補助食品のみで提供することもありますよ。</p>
+                  <p>精神科の栄養指導はとても難しく、患者様によっては継続できない患者様もいらっしゃいます。医師、看護師とも連携して声掛けをしたり、体重測定の経過をグラフで見える化したり、写真で分かりやすく説明したりしています。</p>
                 </div>
                 <figure class="sp_02yellow_img"><img src="<?php echo get_template_directory_uri(); ?>/img/sp_a2.png" alt=""></figure>
               </div>
@@ -119,8 +118,7 @@ get_header();
               <div class="sp02_yellow">
                 <div class="sp02_yellow_space is-pc"></div>
                 <div class="sp02_yellow_bg">
-                  <p>弁当箱に詰まっていたり、包装されていると安心するみたい。
-                    個包装のパン、牛乳、栄養補助食品のみで提供することもありますよ。</p>
+                  <p>固形物を提供せずに流動食や栄養補助食品の食事内容にしたり、排便状況を確認しながら医師と相談して食事内容を調整しています。</p>
                 </div>
                 <figure class="sp_02yellow_img"><img src="<?php echo get_template_directory_uri(); ?>/img/sp_a3.png" alt=""></figure>
               </div>
@@ -152,7 +150,7 @@ get_header();
 //top-entry
 //＠＠＠＠＠＠＠＠＠＠＠＠＠＠＠＠＠＠ -->
 <section class="top-entry">
-  <a href="/about.html" class="top-entry_container inner">
+  <a href="<?php echo esc_url( home_url( '/' ) ); ?>admission" class="top-entry_container inner">
     <div class="bg-dark_green">
       <div class="top-entry_txt">全国に仲間を作り、<br class="is-sp">精神科領域の栄養管理に関する<br>疑問や悩みを解決しませんか？</div>
       <div class="cmn-button-white_area">

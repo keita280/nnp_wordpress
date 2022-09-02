@@ -34,9 +34,9 @@ get_header();
         会員情報の変更・退会は<a class="change_contact_link" href="<?php echo esc_url(home_url()); ?>/change">こちら</a>からお願いいたします。
         <br>
         <br>
-        電話、FAXでのお問い合わせはこちら
+        FAXでのお問い合わせはこちら
         <br>
-        TEL：03-5986-3171　　FAX：050-3730-7423
+        FAX：050-3730-7423
       </p>
     </div>
   </section>

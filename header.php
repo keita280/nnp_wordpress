@@ -57,7 +57,7 @@
           <li class="header_bottom_list"><a class="header_bottom_link" href="<?php echo esc_url(home_url()); ?>/about/">私たちについて</a></li>
           <li class="header_bottom_list"><a class="header_bottom_link" href="<?php echo esc_url(home_url()); ?>/category/training/">新着情報</a></li>
           <li class="header_bottom_list"><a class="header_bottom_link" href="<?php echo esc_url(home_url()); ?>/schedule/">研修会・イベント一覧</a></li>
-          <li class="header_bottom_list"><a class="header_bottom_link" href="<?php echo esc_url(home_url()); ?>/reference/">資料室</a></li>
+          <li class="header_bottom_list"><a class="header_bottom_link" href="<?php echo esc_url(home_url()); ?>/refernce_pass/page/">資料室</a></li>
           <li class="header_bottom_list"><a class="header_bottom_link" href="<?php echo esc_url(home_url()); ?>/strong/">私たちの強み</a></li>
           <li class="join"><a class="header_bottom_link btn-green" href="<?php echo esc_url(home_url()); ?>/admission">入会案内</a></li>
         </ul>
@@ -78,7 +78,7 @@
       <li class="accordion-item_list"><a class="accordion-item_link" href="<?php echo esc_url(home_url()); ?>/about/">私たちについて<span class="arrow-right"></span></a></li>
       <li class="accordion-item_list"><a class="accordion-item_link" href="<?php echo esc_url(home_url()); ?>/category/training/">新着情報<span class="arrow-right"></span></a></li>
       <li class="accordion-item_list"><a class="accordion-item_link" href="<?php echo esc_url(home_url()); ?>/schedule/">研修会・イベント一覧<span class="arrow-right"></span></a></li>
-      <li class="accordion-item_list"><a class="accordion-item_link" href="<?php echo esc_url(home_url()); ?>/reference">資料室<span class="arrow-right"></span></a></li>
+      <li class="accordion-item_list"><a class="accordion-item_link" href="<?php echo esc_url(home_url()); ?>/refernce_pass/page/">資料室<span class="arrow-right"></span></a></li>
 
       <li class="accordion-item_list"><a class="accordion-item_link" href="<?php echo esc_url(home_url()); ?>/strong">私たちの強み<span class="arrow-right"></span></a></li>
       <li class="accordion-item_list"><a class="accordion-item_link" href="<?php echo esc_url(home_url()); ?>/admission">入会案内<span class="arrow-right"></span></a></li>

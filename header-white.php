@@ -80,7 +80,7 @@
             <a class="header_bottom_link" href="<?php echo esc_url(home_url()); ?>/schedule">研修会・イベント一覧</a>
           </li>
           <li class="header_bottom_list">
-            <a class="header_bottom_link" href="<?php echo esc_url(home_url()); ?>/reference">資料室</a>
+            <a class="header_bottom_link" href="<?php echo esc_url(home_url()); ?>/refernce_pass/page/">資料室</a>
           </li>
           <li class="header_bottom_list">
             <a class="header_bottom_link" href="<?php echo esc_url(home_url()); ?>/strong">私たちの強み</a>

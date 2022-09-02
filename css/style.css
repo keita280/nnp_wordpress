@@ -1464,7 +1464,7 @@ _:-ms-lang(x)::-ms-backdrop,
 
 @media (max-width: 980px) {
   .top-facebook_texts_ttl::after {
-    right: 55px;
+    right: 52px;
   }
 }
 
@@ -1699,6 +1699,9 @@ _:-ms-lang(x)::-ms-backdrop,
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   line-height: 1.7581;
   font-size: 14px;
   border-bottom: 1px solid #57B07B;
@@ -2764,8 +2767,8 @@ span.wpcf7-list-item {
 .change-arrow-white {
   position: relative;
   display: block;
-  -webkit-transform: translateY(-225%);
-          transform: translateY(-225%);
+  -webkit-transform: translateY(-212%);
+          transform: translateY(-212%);
   right: 23px;
   border-radius: 40px;
   width: 40px;
@@ -2777,7 +2780,7 @@ span.wpcf7-list-item {
 .change-arrow-white:before {
   content: '';
   position: absolute;
-  right: 12px;
+  right: 13px;
   top: 16.5px;
   width: 8px;
   height: 8px;
@@ -2791,7 +2794,7 @@ span.wpcf7-list-item {
   content: "";
   display: block;
   position: absolute;
-  margin-left: 15.5px;
+  margin-left: 13.5px;
   margin-top: 20px;
   width: 12px;
   height: 1px;

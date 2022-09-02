@@ -8,9 +8,9 @@ get_header();
 
     <!-- ページタイトル -->
     <div class="page-title">
-      <figure class="section_title_blob-r"><img src="/img/blobs.svg" alt=""></figure>
+      <figure class="section_title_blob-r"><img src="<?php echo get_template_directory_uri(); ?>/img/blobs.svg" alt=""></figure>
       <h1 class="page-ttl">特定商取引法に基づく表記</h1>
-      <figure class="section_title_blob-l"><img src="./img/blobs_2.svg" alt=""></figure>
+      <figure class="section_title_blob-l"><img src="<?php echo get_template_directory_uri(); ?>/img/blobs_2.svg" alt=""></figure>
 
     </div>
 

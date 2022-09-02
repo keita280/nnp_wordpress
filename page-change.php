@@ -32,9 +32,9 @@ get_header();
             その他のお問い合わせは<a class="change_contact_link" href="<?php echo esc_url(home_url()); ?>/contact">こちら</a>からお願いいたします。
             <br>
             <br>
-            電話、FAXでのお問い合わせはこちら
+            FAXでのお問い合わせはこちら
             <br>
-            TEL：03-5986-3171　　FAX：050-3730-7423
+            FAX：050-3730-7423
           </p>
         </div>
       </section>

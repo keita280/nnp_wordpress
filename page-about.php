@@ -137,12 +137,8 @@ get_header();
         </tr>
         <tr>
           <th>住所</th>
-          <td>〒173-0037 東京都板橋区小茂根4-11-11<br>一般財団法人 精神医学研究所附属　東京武蔵野病院 栄養科
+          <td>〒108-0074<br>東京都港区高輪4-23-6　ハイホーム高輪708
           </td>
-        </tr>
-        <tr>
-          <th>事務局TEL</th>
-          <td>03-5986-3171</td>
         </tr>
         <tr>
           <th>事務局FAX</th>
@@ -168,7 +164,7 @@ get_header();
 //top-entry
 //＠＠＠＠＠＠＠＠＠＠＠＠＠＠＠＠＠＠ -->
   <section class="top-entry">
-    <a href="/admission.html" class="top-entry_container inner">
+    <a href="<?php echo esc_url( home_url( '/' ) ); ?>admission" class="top-entry_container inner">
       <div class="bg-dark_green">
         <div class="top-entry_txt">全国に仲間を作り、<br class="is-sp">精神科領域の栄養管理に関する<br>疑問や悩みを解決しませんか？</div>
         <div class="cmn-button-white_area">

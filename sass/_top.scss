@@ -1414,7 +1414,7 @@ animation :infinity-scroll-left 300s infinite linear both;
     width: 19px;
     height: 30.25px;
     @include mq('sp'){
-      right: 55px;
+      right: 52px;
     }
     @include mq('md'){
       left:155px;
@@ -1640,6 +1640,7 @@ animation :infinity-scroll-left 300s infinite linear both;
 .footer_contents_adress {
   display: flex;
   justify-content: center;
+  align-items: center;
   line-height: 1.7581;
   font-size: 14px;
   border-bottom: 1px solid $font-color-main;
@@ -1660,6 +1661,7 @@ animation :infinity-scroll-left 300s infinite linear both;
 }
 
 .footer_contents_adress_texts {
+
 }
 
 .footer_contents_links {

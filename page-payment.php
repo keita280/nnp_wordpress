@@ -16,7 +16,7 @@ get_header("white");
           （年会費の支払いはクレジットカード決済のみとなります。）
         </p>
         <div class="payment_submit">
-          <a href="" class="payment_submit_button">
+          <a href="https://square.link/u/OQ4bMjuu" target="_blank" class="payment_submit_button">
             <div class="payment_button-white">支払い情報を入力する</div></a>
           </div>
       </section>

@@ -51,71 +51,9 @@ get_header();
       <section class="admission_contact_container">
         <div class="admission_contact_inner inner">
           <h3 class="h3_ttl">入会申込フォーム</h3>
-          <figure class="admission_flow"><img src="./img/admission_flow.webp" alt=""></figure>
+          <figure class="admission_flow"><img src="<?php echo get_template_directory_uri(); ?>/img/admission_flow.webp" alt=""></figure>
           <h4 class="form_h4_ttl">会員情報</h4>
           <form  class="admission_form" action="" method="post" name="">
-              <!-- <div class="admission_form_container">
-                <div class="admission_form_body">
-                    <label>お名前<span>必須</span></label>
-                    <input type="text" name="name" placeholder="例：山田　太郎" value="">
-                </div>
-                <div class="admission_form_body">
-                    <label>お名前フリガナ<span>必須</span></label>
-                    <input type="text" name="name" placeholder="例：ヤマダ　タロウ" value="">
-                </div>
-                <div class="admission_form_body">
-                  <label>精神科医学会認定栄養士<span>必須</span></label>
-                  <div class="radio">
-                    <input type="radio" name="radio" class="radio-input" id="radio-01" required>
-                    <label for="radio-01">取得済み</label><br>
-                    <input type="radio" name="radio" class="radio-input" id="radio-02">
-                    <label for="radio-02">未取得</label><br>
-                  </div>
-                </div>
-                <div class="admission_form_body">
-                    <label>メールアドレス<span>必須</span></label>
-                    <input type="text" name="email" placeholder="例：mail@example.com" value="">
-                </div>
-                <div class="admission_form_body">
-                    <label>電話番号</label>
-                    <input type="text" name="tel" placeholder="例：08012345678" value="">
-                </div>
-                <div class="admission_form_body">
-                  <label>自宅郵便番号<span>必須</span></label>
-                  <input type="text" name="email" placeholder="例：08012345678" value="">
-              </div>             
-              <div class="admission_form_body">
-                <label>自宅住所<span>必須</span></label>
-                <input type="text" name="email" placeholder="例：東京都板橋区小茂根4-11-11" value="">
-              </div>
-              <hr class="form_border"></hr>
-              <h4 class="form_h4_ttl">勤務先情報</h4>
-              <div class="admission_form_body">
-                <label>施設名<span>必須</span></label>
-                <input type="text" name="email" placeholder="例：〇〇病院" value="">
-              </div>
-              <div class="admission_form_body">
-                <label>部署名/役職</label>
-                <input type="text" name="email" placeholder="例：〇〇部　課長" value="">
-              </div>
-              <div class="admission_form_body">
-                <label>郵便番号<span>必須</span></label>
-                <input type="text" name="email" placeholder="例：08012345678" value="">
-              </div>             
-              <div class="admission_form_body">
-              <label>住所<span>必須</span></label>
-              <input type="text" name="email" placeholder="例：東京都板橋区小茂根4-11-11" value="">
-              </div>
-              <div class="admission_form_body">
-                <label>電話番号</label>
-                <input type="text" name="tel" placeholder="例：08012345678" value="">
-              </div>
-              <hr class="form_border"></hr>
-                <div class="admission_form_body">
-                  <label>個人情報の取り扱い<span class="required">必須</span></label>
-                  <input class="checkbox-input" type="checkbox" name="" value=""><p class="checkbox-text"><a class="privacy-link" href="">プライバシーポリシー</a>に同意する</p>
-                </div>
-              </div> -->
 
               <?php echo do_shortcode( '[contact-form-7 id="206" title="お問い合わせ_copy"]' ); ?>
 
