@@ -7,11 +7,9 @@
       <div class="footer_contents_adress">
         <figure class="footer_logo"><img src="<?php echo get_template_directory_uri(); ?>/img/nnp_logo.png" alt=""></figure>
         <div class="footer_contents_adress_texts">
-          <p>〒173-0037<br>
-            東京都板橋区小茂根4-11-11<br>
-            一般財団法人 精神医学研究所附属東京武蔵野病院 栄養科<br>
-            FAX：050-3730-7423<br>
-            TEL：03-5986-3171</p>
+          <p>〒108-0074<br>
+          東京都港区高輪4-23-6　ハイホーム高輪708<br>
+          FAX：050-3730-7423       
         </div>
         <!-- footer_contents_adress_texts -->
       </div>
@@ -42,7 +40,7 @@
       <ul class="footer_bottom_left">
         <li><a href="<?php echo esc_url(home_url()); ?>/contact" class="footer_bottom_left_link footer_bottom_left_link_left">お問い合わせ</a></li>
         <li><a href="<?php echo esc_url(home_url()); ?>/privacy" class="footer_bottom_left_link footer_bottom_left_link_right">プライバシーポリシー</a></li>
-        <li><a href="<?php echo esc_url(home_url()); ?>/privacy" class="footer_bottom_left_link footer_bottom_left_link_right">特定商取引法に基づく表記</a></li>
+        <li><a href="<?php echo esc_url(home_url()); ?>/low" class="footer_bottom_left_link footer_bottom_left_link_right">特定商取引法に基づく表記</a></li>
       </ul>
       <div class="footer_bottom_right">Copyright © 2022<br class="is-sp"> 全国精神科栄養士協会 All Rights Reserved.</div>
     </div>
