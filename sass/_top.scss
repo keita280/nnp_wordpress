@@ -1559,10 +1559,10 @@ animation :infinity-scroll-left 300s infinite linear both;
 //＠＠＠＠＠＠＠＠＠＠＠＠＠＠＠＠＠＠
 .top-entry {
   @include mq('md'){
-    background: url(../img/top_entry.png) no-repeat center center / contain;
+    background: url("/wp-content/themes/nnp_theme/img/top_entry.png") no-repeat center center / cover;
   }
   @include mq('sp'){
-    background: url(../img/Frame_55.png) no-repeat center center / cover;
+    background: url("/wp-content/themes/nnp_theme/img/Frame_55.png") no-repeat center center / cover;
     height: 456px;
   }
 }
