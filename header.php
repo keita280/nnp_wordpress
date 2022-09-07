@@ -6,7 +6,7 @@
     <meta name="viewport" 
     content="width=device-width, initial-scale=1.0">
     <meta name="description" content="<?php bloginfo('description');?>"/>
-    <meta name="robots" content="noindex">
+    <!-- <meta name="robots" content="noindex"> -->
     <!-- 本番納品前にnoindex消すの忘れないこと！！！ -->
     <title><?php bloginfo('name');?></title>
 

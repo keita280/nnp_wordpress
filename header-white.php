@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="一般社団法人　全国精神科栄養士協会 のホームページです。" />
-  <meta name="robots" content="noindex" />
+  <!-- <meta name="robots" content="noindex" /> -->
   <!-- 本番納品前にnoindex消すの忘れないこと！！！ -->
   <title>
     一般社団法人　全国精神科栄養士協会 ｜ Nutrition Needs in Psychiatry

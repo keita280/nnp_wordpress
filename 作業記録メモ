@@ -80,18 +80,29 @@ https://teratail.com/questions/198679
 
 ・refarenceのSPで表示崩れ
 
-■あとから確認が必要なこと
+; ■あとから確認が必要なこと＝＝＝＝＝＝
+ボタンデザイン崩れの修正
+・資料室でパスワードを入れて確定ボタンを押した後、画面が自動遷移しない。
+・ドロワーメニューのクリック領域
+・ホバーアニメーションが不具合に見える
 
 ・TOPのバナーセクションのリンクは全て非活性なのでどうするか確認
 ・aboutページの「定款」「役員一覧」「総会資料」はサンプル
+・サンプル記事を全て削除
+・コンタクトフォームの再設定
+・本番の WordPressログインと管理画面設定
+・SEO関連のプラグインの導入
+
+; ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
 
-9/3(土)
+; ■ログイン関係情報＝＝＝＝＝＝＝＝＝
 keiのサーバーのnnpサーバー情報
 メール：tanakei1115@gmail.com
 ユーザー名:tanakei1115@gmail.com
 パスワード：TYst5/-Ht7?WpV7
 →tanakei7に変更。
+
 
 管理画面
 http://nnp.local/login_70773
@@ -101,16 +112,10 @@ http://nnp.local/login_70773
 nnpeiyou
 資料室のPASS
 password
-
+; ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
 
 ■報告事項
-・facebookが正式なページではなくて、単なるグループであったため、facebookのプラグインを利用したリンクは不可。画像を配置し、グループのページにリンクする仕様にしている。
-公式）
-https://developers.facebook.com/docs/plugins/page-plugin/
-
-方法）
-https://www.onecruise.co.jp/degiodegiko/how-to-embed-facebook-pages/
 
 
 ■参考情報

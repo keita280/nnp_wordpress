@@ -10,7 +10,6 @@
       <div class="d-demo__wrap">
         <ul class="d-demo__list d-demo__list--left">
           <li class="d-demo__item"><img src="<?php echo get_template_directory_uri(); ?>/img/main_visual.png" alt></li>
-          <li class="d-demo__item"><img src="<?php echo get_template_directory_uri(); ?>/img/main_visual.png" alt></li>
         </ul>
         <ul class="d-demo__list d-demo__list--left">
           <li class="d-demo__item"><img src="<?php echo get_template_directory_uri(); ?>/img/main_visual.png" alt></li>
@@ -145,11 +144,13 @@
         <!-- /.top-facebook_texts_msg -->
         <a class="top-facebook_texts_more cmn-button" href="https://www.facebook.com/%E4%B8%80%E8%88%AC%E7%A4%BE%E5%9B%A3%E6%B3%95%E4%BA%BA-%E5%85%A8%E5%9B%BD%E7%B2%BE%E7%A5%9E%E7%A7%91%E6%A0%84%E9%A4%8A%E5%A3%AB%E5%8D%94%E4%BC%9A-106399688763557/" target="_blank" rel="noopener noreferrer">もっと見る<span class="arrow-right icon"></span></a>
       </div>
-      <div class="fb_wrapper_pc">
+      <div class="fb_wrapper_pc is-sp">
+      <!-- <div class="fb-page" data-href="https://www.facebook.com/%E4%B8%80%E8%88%AC%E7%A4%BE%E5%9B%A3%E6%B3%95%E4%BA%BA-%E5%85%A8%E5%9B%BD%E7%B2%BE%E7%A5%9E%E7%A7%91%E6%A0%84%E9%A4%8A%E5%A3%AB%E5%8D%94%E4%BC%9A-106399688763557/" data-tabs=”timeline” data-width="300" data-height="70" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/%E4%B8%80%E8%88%AC%E7%A4%BE%E5%9B%A3%E6%B3%95%E4%BA%BA-%E5%85%A8%E5%9B%BD%E7%B2%BE%E7%A5%9E%E7%A7%91%E6%A0%84%E9%A4%8A%E5%A3%AB%E5%8D%94%E4%BC%9A-106399688763557/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/%E4%B8%80%E8%88%AC%E7%A4%BE%E5%9B%A3%E6%B3%95%E4%BA%BA-%E5%85%A8%E5%9B%BD%E7%B2%BE%E7%A5%9E%E7%A7%91%E6%A0%84%E9%A4%8A%E5%A3%AB%E5%8D%94%E4%BC%9A-106399688763557/">一般社団法人 全国精神科栄養士協会</a></blockquote></div> -->
         <iframe id="fbiframe" class="fb_iframe is-pc" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2F%25E4%25B8%2580%25E8%2588%25AC%25E7%25A4%25BE%25E5%259B%25A3%25E6%25B3%2595%25E4%25BA%25BA-%25E5%2585%25A8%25E5%259B%25BD%25E7%25B2%25BE%25E7%25A5%259E%25E7%25A7%2591%25E6%25A0%2584%25E9%25A4%258A%25E5%25A3%25AB%25E5%258D%2594%25E4%25BC%259A-106399688763557&tabs&width=680&height=255&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="255" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
       </div>
 
       <div class="fb_wrpper_sp is-sp">
+      <!-- <div class="fb-page" data-href="https://www.facebook.com/uniqlo" data-show-posts=”true” data-width="500" data-height="70" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/uniqlo" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/uniqlo">Uniqlo</a></blockquote></div> -->
         <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2F%25E4%25B8%2580%25E8%2588%25AC%25E7%25A4%25BE%25E5%259B%25A3%25E6%25B3%2595%25E4%25BA%25BA-%25E5%2585%25A8%25E5%259B%25BD%25E7%25B2%25BE%25E7%25A5%259E%25E7%25A7%2591%25E6%25A0%2584%25E9%25A4%258A%25E5%25A3%25AB%25E5%258D%2594%25E4%25BC%259A-106399688763557&tabs=timeline&width=325&height=335&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="325" height="335" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
       </div>
       <!-- /.top-facebook_img -->
