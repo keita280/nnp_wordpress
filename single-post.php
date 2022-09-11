@@ -46,7 +46,7 @@ get_header("white");
             </div>
           </div>
           <div class="for_news">
-            <a class="cmn-button">新着情報一覧<span class="arrow-right icon"></span></a>
+            <a class="cmn-button" href="<?php echo esc_url(home_url()); ?>/category/training/">新着情報一覧<span class="arrow-right icon"></span></a>
           </div>
         </div>
       </section>

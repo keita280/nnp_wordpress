@@ -19,7 +19,7 @@
           <li class="footer_contents_link_text"><a href="<?php echo esc_url(home_url()); ?>/about/" >私たちについて</a></li>
           <li class="footer_contents_link_text"><a href="<?php echo esc_url(home_url()); ?>/category/training/" >新着情報</a></li>
           <li class="footer_contents_link_text"><a href="<?php echo esc_url(home_url()); ?>/strong">私たちの強み</a></li>
-          <li class="footer_contents_link_text"><a href="<?php echo esc_url(home_url()); ?>/reference" >資料室</a></li>
+          <li class="footer_contents_link_text"><a href="<?php echo esc_url(home_url()); ?>/refernce_pass/page/" >資料室</a></li>
         </ul>
         <!-- footer_contents_link_top -->
         <ul class="footer_contents_link_bottom">

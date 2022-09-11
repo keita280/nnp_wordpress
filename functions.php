@@ -55,7 +55,6 @@ add_action('init', 'my_menu_init');
 function my_password_form() {
   return
     '
-
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <div class="reference_container inner">
     <form class="reference-content" action="' . home_url() . '/wp-login.php?action=postpass" method="post">
@@ -72,7 +71,7 @@ function my_password_form() {
       パスワードは定期的に変更され、その度にメールをお送りしております。<br /><br />
     </p>
     <p>
-      パスワードがわからない場合は、<a href="">お問い合わせフォーム</a>
+      パスワードがわからない場合は、<a href="https://www.nnp.life-freedom.org/contact/">お問い合わせフォーム</a>
       より事務局にご連絡ください。
     </p>
   </div>

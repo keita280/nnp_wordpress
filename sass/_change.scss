@@ -276,7 +276,10 @@ input[type="radio"]:checked + .wpcf7-list-item-label::before {
 .change-arrow-white {
   position: relative;
   display: block;
-  transform: translateY(-212%);
+  transform: translateY(-150%);
+  @include mq('sp'){
+    transform: translateY(-156%);
+  }
   right: 23px;
   border-radius: 40px;
   width: 40px;
@@ -288,9 +291,9 @@ input[type="radio"]:checked + .wpcf7-list-item-label::before {
     content: '';
     position: absolute;
     right: 13px;
-    top: 16.5px;
-    width: 8px;
-    height: 8px;
+    top: 15px;
+    width: 9px;
+    height: 9px;
     border-top: solid 1px currentColor;
     border-right: solid 1px currentColor;
     -webkit-transform: rotate(45deg);
@@ -302,8 +305,84 @@ input[type="radio"]:checked + .wpcf7-list-item-label::before {
     display: block;
     position: absolute;
     margin-left: 13.5px;
-    margin-top: 20px;
-    width: 12px;
+    margin-top: 19px;
+    width: 13px;
+    height: 1px;
+    background-color: $font-color-white;
+  }
+}
+.change-arrow-white-admission {
+  position: relative;
+  display: block;
+  transform: translateY(-151%);
+  @include mq('sp'){
+    transform: translateY(-153%);
+  }
+  right: 23px;
+  border-radius: 40px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid $font-color-white;
+  margin-left: auto;
+  
+  &:before {
+    content: '';
+    position: absolute;
+    right: 13px;
+    top: 15px;
+    width: 9px;
+    height: 9px;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    margin-left: 13.5px;
+    margin-top: 19px;
+    width: 13px;
+    height: 1px;
+    background-color: $font-color-white;
+  }
+}
+.change-arrow-contact-white {
+  position: relative;
+  display: block;
+  transform: translateY(-228%);
+  @include mq('sp'){
+    transform: translateY(-230%);
+  }
+  right: 23px;
+  border-radius: 40px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid $font-color-white;
+  margin-left: auto;
+  
+  &:before {
+    content: '';
+    position: absolute;
+    right: 13px;
+    top: 15px;
+    width: 9px;
+    height: 9px;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    margin-left: 13.5px;
+    margin-top: 19px;
+    width: 13px;
     height: 1px;
     background-color: $font-color-white;
   }
@@ -353,6 +432,32 @@ input[type="submit"]{
         background-color: $font-color-main;
       }
     }
+    .change-arrow-white-admission {
+      background-color: #fff;
+      transition: ease 0.5s;
+
+      &::before {
+        border-top: solid 1px $font-color-main;
+        border-right: solid 1px $font-color-main;
+      }
+      &::after {
+        transition: ease 0.5s;
+        background-color: $font-color-main;
+      }
+    }
+    .change-arrow-contact-white {
+      background-color: #fff;
+      transition: ease 0.5s;
+
+      &::before {
+        border-top: solid 1px $font-color-main;
+        border-right: solid 1px $font-color-main;
+      }
+      &::after {
+        transition: ease 0.5s;
+        background-color: $font-color-main;
+      }
+    }
   }
 }
 .button_wrap::after{
@@ -384,91 +489,5 @@ input[type="submit"]:hover {
 
 
 
-
-
-
-
-// .change_submit_button2 {
-//   display: inline-block;
-//   padding: 23.5px 20px;
-//   border: currentColor;
-//   background-color: $font-color-main;
-//   border-radius: 10px;
-//   color: #ffffff;
-//   text-align: center;
-//   font-size: 22px;
-//   font-weight: 700;
-//   &:hover {
-//     opacity: 0.8;
-//     transition: ease 0.5s;
-//     .change-arrow-white {
-//       background-color: #fff;
-//       transition: ease 0.5s;
-//       &::before {
-//         border-top: solid 1px $font-color-main;
-//         border-right: solid 1px $font-color-main;
-//       }
-//       &::after {
-//         transition: ease 0.5s;
-//         background-color: $font-color-main;
-//       }
-//     }
-//   }
-// }
-
-// .chenge_button-white2 {
-// }
-
-// .change_submit_input {
-//   font-size: 22px;
-//   color: $font-color-white;
-//   font-weight: 700; 
-//   display: inline-block;
-//   height: 29px;
-//   width: 100%;
-//   background-color: $font-color-main;
-//   border: none;
-//   width: 368px;
-//   max-width: 100%;
-//   top: 50%;
-// }
-
-
-// .change-arrow-white2{
-//   position: relative;
-//   display: block;
-//   transform: translateY(-100%);
-//   // right: -160%;
-//   border-radius: 40px;
-//   width: 40px;
-//   height: 40px;
-//   border: 1px solid $font-color-white;
-//   margin-left: auto;
-  
-//   &:before {
-//     content: '';
-//     position: absolute;
-//     right: 12px;
-//     top: 16.5px;
-//     width: 8px;
-//     height: 8px;
-//     border-top: solid 1px currentColor;
-//     border-right: solid 1px currentColor;
-//     -webkit-transform: rotate(45deg);
-//     transform: rotate(45deg);
-//   }
-  
-//   &:after {
-//     content: "";
-//     display: block;
-//     position: absolute;
-//     margin-left: 15.5px;
-//     margin-top: 20px;
-//     width: 12px;
-//     height: 1px;
-//     background-color: $font-color-white;
-//   }
-// }
-//送信ボタンここまで
 
 

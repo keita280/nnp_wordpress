@@ -32,7 +32,7 @@ get_header();
             一般社団法人全国精神科栄養士協会へご入会をご希望の方は、下記の入会申込フォームから登録をお願いいたします。
           </p>
           <div class="admission_box_wrapper">
-            <div class="admission_box">
+            <div class="admission_box admission_box-left">
               <h4 class="admission_box_ttl">会員資格のある方 </h4>
               <p class="admission_box_txt">・精神科に勤務する管理栄養士・栄養士<br>
                 ・精神科領域に興味のある管理栄養士・栄養士</p>

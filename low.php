@@ -58,14 +58,14 @@ get_header();
             <h2 class="law_section_ttl">電話受付時間</h2>
             <p class="law_section_txt">平日10:00～17:00</p>
           </div>
-          <div class="law_section">
+          <!-- <div class="law_section">
             <h2 class="law_section_ttl">メールアドレス</h2>
             <p class="law_section_txt"><a class="law-link" href="#">info@nnp-eiyou.com</a></p>
           </div>
           <div class="law_section">
             <h2 class="law_section_ttl">ホームページ</h2>
             <p class="law_section_txt"><a class="law-link" href="#">https://www.nnp-eiyou.com</a></p>
-          </div>
+          </div> -->
           <div class="law_section">
             <h2 class="law_section_ttl">取扱い役務の種類、価格</h2>
             <p class="law_section_txt">

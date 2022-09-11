@@ -13,7 +13,7 @@
 // admission_container
 .admission_box_wrapper {
   display: flex;
-  gap:3.875%;
+  // gap:3.875%;
   @include mq('sp'){
     display: block;
   }
@@ -27,6 +27,12 @@
   border-radius: 24px;
   @include mq('sp'){
     padding: 20px 20px;
+  }
+}
+
+.admission_box-left {
+  @include mq('md'){
+    margin-right: 3.875%;
   }
 }
 

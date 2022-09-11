@@ -1417,7 +1417,7 @@ animation :infinity-scroll-left 300s infinite linear both;
       right: 52px;
     }
     @include mq('md'){
-      left:155px;
+      left:169px;
     }
   }
 }
@@ -1810,8 +1810,9 @@ animation :infinity-scroll-left 300s infinite linear both;
 
 .footer_bottom_left_link_right {
   @include mq('md'){
-    margin-left: 16px;
-    margin-right: 16px;
+    // margin-left: 16px;
+    // margin-right: 16px;
+    padding: 0 16px;
   }
 }
 

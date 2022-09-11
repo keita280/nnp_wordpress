@@ -162,7 +162,7 @@
   <!-- //＠＠＠＠＠＠＠＠＠＠＠＠＠＠＠＠＠＠
 //link
 //＠＠＠＠＠＠＠＠＠＠＠＠＠＠＠＠＠＠ -->
-  <section class="top-link bgc-white">
+  <!-- <section class="top-link bgc-white">
     <div class="top-link_container inner">
       <p class="top-link_text">一般社団法人 全国精神科栄養士協会webサイトバナー広告募集のご案内は<a href="#" class="link-color">こちら</a></p>
       <ul class="top-link_banners">
@@ -176,16 +176,13 @@
           <li>バナーが入ります</li>
         </a>
       </ul>
-      <!-- /.top-link_banners -->
       <div class="top-link_related-link opacity">
         <p class="top-link_related-link_ttl">関連リンク</p>
         <figure class="top-link_related-link_img"><a href="https://www.mhlw.go.jp/index.html" target="_blank" rel="noopener"><img src="<?php echo get_template_directory_uri(); ?>/img/MHLW 1.png" alt=""></a></figure>
       </div>
-      <!-- /.top-link_related-link -->
     </div>
-    <!-- /.top-link_container -->
-  </section>
-  <!-- /.top-link -->
+  </section> -->
+
 
   <!-- //＠＠＠＠＠＠＠＠＠＠＠＠＠＠＠＠＠＠
 //top-entry
